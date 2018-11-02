@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton|Rock+Salt');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 17px;
+}
+
+/* SIDE BAR NAV */
+.sidebarnav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 120;
+    top: 0;
+    right: 0;
+    background-color: rgb(40, 29, 18);
+    overflow-x: hidden;
+    transition: 0.5s ease-in-out;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.sidebarnav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(169, 115, 74);
+    display: block;
+    transition: 0.5s ease-in-out;
+    text-align: center;
+}
+
+.sidebarnav a:hover {
+    color: rgb(217, 157, 73);
+    transition: 0.5s ease-in-out;
+}
+
+.sidebarnav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main-content {
+    transition: margin-right 0.5s ease-in-out;
+    padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebarnav {padding-top: 15px;}
+  .sidebarnav a {font-size: 18px;}
+}
+
+#sidebarButton {
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 20px;
+  color: rgb(236, 232, 227);
+  font-size: 25px;
+}
+
+#sidebarButton:hover {
+  color: rgb(217, 157, 73);
+  transition: 0.5s ease-in-out; 
+}
+/* END OF SIDE BAR NAV */
+
+
