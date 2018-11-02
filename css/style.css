@@ -47,6 +47,13 @@ body {
     margin-left: 50px;
 }
 
+/* .sidebarnav .signature {
+    position: absolute;
+    font-size: 15px;
+    bottom: 0;
+    right: 0;
+} */
+
 #main-content {
     transition: margin-right 0.5s ease-in-out;
     padding: 20px;
@@ -72,4 +79,29 @@ body {
 }
 /* END OF SIDE BAR NAV */
 
+/* ACCORDION */
+.accordion {
+    color: rgb(169, 115, 74);
+    cursor: pointer;
+    /* width: 100%; */
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    transition: 0.5s ease-in-out;
+}
 
+.active, .accordion:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.panel {
+    /* padding: 0 18px; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+.panel a {
+    font-size: 15px;
+}
+/* END OF ACCORDION */
