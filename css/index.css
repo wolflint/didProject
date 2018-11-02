@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton|Rock+Salt');
 /* Style the video: 100% width and height to cover the entire window */
 #bgVideo {
    position: fixed;
@@ -11,10 +12,36 @@
 .content {
    position: fixed;
    bottom: 0;
-   background: rgba(0, 0, 0, 0.5);
+   background: rgba(0, 0, 0, 0);
    color: #f1f1f1;
    width: 100%;
    padding: 20px;
+   text-align: center;
+   padding-bottom: 10vh
+}
+.content li{
+  display: inline;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.content li a {
+  font-size: 35px;
+  margin-left: 10%;
+  margin-right: 10%;
+  /* font-family: 'Monoton', cursive; */
+  color: rgb(217, 157, 73);
+  font-family: 'Rock Salt', cursive;
+  font-weight: bold;
+  text-shadow:
+    -1px -1px 0 rgb(40, 29, 18),
+    1px -1px 0 rgb(40, 29, 18),
+    -1px 1px 0 rgb(40, 29, 18),
+    1px 1px 0 rgb(40, 29, 18);
+}
+
+.content li a:hover {
+  color: rgb(165, 125, 75)
 }
 
 /* Style the button used to pause/play the video */
