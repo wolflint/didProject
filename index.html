@@ -1,64 +1,85 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-  <link type="text/css" rel="stylesheet" href="css/index.css" media="screen,projection" />
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Groovy Guitars - Home</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/index.css">
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
+
 </head>
+
 
 <body>
 
-  <!-- The video -->
-  <video autoplay muted loop id="bgVideo" poster="assets\bgVideo\bgThumb.jpg">
+  <video autoplay muted loop id="myVideo">
     <source src="assets\bgVideo\bgVideo.mp4" type="video/mp4">
-    <source src="assets\bgVideo\bgVideo.webm" type="video/webm">
-    <source src="assets\bgVideo\bgVideo.ogv" type="video/ogg">
+      Your browser does not support HTML5 video.
+    </video>
+    
+    <div class="content link-text">
+      <!-- <div class="container "> -->
+        <div class="one-third column"><a href="#">Songs</a></div>
+        <div class="one-third column"><a href="#">Chords</a></div>
+        <div class="one-third column"><a href="#">Guides</a></div>
+        <!-- </div> -->
+    </div>
+    
+    <div id="mySidenav" class="sidebarnav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
 
-  </video>
+    <span id="sidebarButton" style="font-size:30px;cursor:pointer" onclick="clickedBtn()">&#9776;</span>
+    
+    <script>
+      /* Set the width of the side navigation to 250px */
+      var open = false;
 
-  <!-- Nav menu -->
+      function clickedBtn() {
+        if (!open){
+          openNav();
+        } else if (open){
+          closeNav();
+        }
+      }
 
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          open = true;
+      }
+      
+      /* Set the width of the side navigation to 0 */
+      function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      open = false;
+    }
+  </script>
 
-
-
-
-
-  <!-- Floating Links -->
-  <div class="content">
-    <!-- <ul id="slide-out" class="sidenav">
-      <li><div class="user-view">
-        <div class="background">
-          <img src="images/office.jpg">
-        </div>
-        <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
-        <a href="#name"><span class="white-text name">John Doe</span></a>
-        <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
-      </div></li>
-      <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-      <li><a href="#!">Second Link</a></li>
-      <li><div class="divider"></div></li>
-      <li><a class="subheader">Subheader</a></li>
-      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-    </ul>
-    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
-    <ul>
-      <li><a href="#">{Songs}</a></li>
-      <li><a href="#">{Chords}</a></li>
-      <li><a href="#">{Guides}</a></li>
-    </ul>
-    <!-- Use a button to pause/play the video with JavaScript -->
-    <!-- <button id="myBtn" onclick="myFunction()">Pause</button> -->
-  </div>
-
-
-  <!--JavaScript at end of body for optimized loading-->
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-  <script type="text/javascript" src="js/index.js"></script>
 </body>
 
 </html>
