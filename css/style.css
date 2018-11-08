@@ -10,24 +10,6 @@ body {
 }
 
 /* SIDE BAR NAV */
-#brand-logo img {
-    height: 200px;
-    width: auto;
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 10px;
-    transition: 0.5s;
-    border-color: darkkhaki;
-    border-radius: 100%;
-
-}
-#brand-logo img:hover {
-    border: dashed crimson;
-    border-radius: 100%;
-    transition: 0.5s;
-}
-
 .sidebarnav {
     height: 100%;
     width: 0;
@@ -89,7 +71,6 @@ body {
   padding: 20px;
   color: rgb(236, 232, 227);
   font-size: 25px;
-  
 }
 
 #sidebarButton:hover {
