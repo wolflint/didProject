@@ -22,7 +22,6 @@ body {
     border-radius: 100%;
 
 }
-
 #brand-logo img:hover {
     border: dashed crimson;
     border-radius: 100%;
@@ -79,81 +78,25 @@ body {
 }
 
 @media screen and (max-height: 450px) {
-    .sidebarnav {
-        padding-top: 15px;
-    }
-
-    .sidebarnav a {
-        font-size: 18px;
-    }
+  .sidebarnav {padding-top: 15px;}
+  .sidebarnav a {font-size: 18px;}
 }
 
 #sidebarButton {
-    position: fixed;
-    right: 0;
-    top: 0;
-    padding: 20px;
-    color: rgb(236, 232, 227);
-    font-size: 25px;
-
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 20px;
+  color: rgb(236, 232, 227);
+  font-size: 25px;
+  
 }
 
 #sidebarButton:hover {
-    color: rgb(217, 157, 73);
-    transition: 0.5s ease-in-out;
+  color: rgb(217, 157, 73);
+  transition: 0.5s ease-in-out; 
 }
-
 /* END OF SIDE BAR NAV */
-
-/* STICKY NAVBAR */
-.header {
-    padding: 30px;
-    text-align: center;
-    font-family: 'Rock Salt', cursive;
-    color: antiquewhite;
-}
-
-#navbar {
-    overflow: hidden;
-    background-color: rgb(40, 29, 18);
-    transition: 0.5s;
-}
-
-#navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-#navbar a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-#navbar a.active {
-    background-color: #4CAF50;
-    color: white;
-}
-
-.content {
-    padding: 16px;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.sticky+.content {
-    padding-top: 60px;
-}
-
-/* END OF STICKY NAV BAR */
 
 /* ACCORDION */
 .accordion {
@@ -167,8 +110,7 @@ body {
     transition: 0.5s ease-in-out;
 }
 
-.active,
-.accordion:hover {
+.active, .accordion:hover {
     background-color: rgba(0, 0, 0, 0.25);
 }
 
@@ -178,9 +120,7 @@ body {
     overflow: hidden;
     transition: max-height 0.5s ease-out;
 }
-
 .panel a {
     font-size: 15px;
 }
-
 /* END OF ACCORDION */
