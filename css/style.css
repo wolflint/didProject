@@ -7,12 +7,28 @@
 body {
     margin: 0;
     font-size: 17px;
-    background: #0f0f0f;
-    color: #f0f0f0;
+    background: url(../assets/patter3.png) repeat;
+    /* color: #f0f0f0; */
+    color: #a57d4b;
+    /* color: #d99d49; */
+}
+.container {
+    padding: 64px 25px 0 25px;
+    /* background: rgba(40, 29, 18, 0.6); */
+    background: rgba(0, 0, 0, 0.6)
 }
 img.side-image {
     margin: 10px;
     box-shadow: 0px 0px 5px 0px rgba(247, 247, 247, 0.4);
+}
+.one-third.column.chords {
+    /* background: white; */
+    margin: 10px;
+    border: 2px solid white;
+    box-shadow: -1px 1px 10px 3px #DCE2E2, 0px 0px 5px -100px #D6C9C9;
+}
+.one-third.column.chords h5 {
+    padding: 0 10px 0 10px;
 }
 
 /* SIDE BAR NAV */
