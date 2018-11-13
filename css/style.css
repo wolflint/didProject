@@ -3,33 +3,78 @@
 * {
     box-sizing: border-box;
 }
+h1, h2, h3, h4, h5, h6 {
+      text-shadow: 1px 1px 2px magenta,
+      0 0 1em blue,
+      0 0 0.2em blue;
+}
 
 body {
     margin: 0;
     font-size: 17px;
     background: url(../assets/patter3.png) repeat;
     /* color: #f0f0f0; */
-    color: #a57d4b;
+    color: #ede5db;
     /* color: #d99d49; */
 }
+
 .container {
     padding: 64px 25px 0 25px;
     /* background: rgba(40, 29, 18, 0.6); */
     background: rgba(0, 0, 0, 0.6)
 }
+
 img.side-image {
     margin: 10px;
     box-shadow: 0px 0px 5px 0px rgba(247, 247, 247, 0.4);
 }
-.one-third.column.chords {
+
+.chords {
     /* background: white; */
     margin: 10px;
     border: 2px solid white;
     box-shadow: -1px 1px 10px 3px #DCE2E2, 0px 0px 5px -100px #D6C9C9;
 }
-.one-third.column.chords h5 {
+
+.chord-name {
     padding: 0 10px 0 10px;
+    text-shadow: 1px 1px 2px magenta,
+    0 0 1em blue,
+    0 0 0.2em blue;
+    transition: 1s;
 }
+
+.chords:hover .chord-name{
+    text-shadow: 1px 1px 2px green,
+    0 0 1em yellowgreen,
+    0 0 0.2em lawngreen;
+}
+
+/* CHORD IMAGES */
+.chord-images {
+    position: relative;
+}
+.chord-images img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.chord-images:hover .overlay {
+    opacity: 1;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1s ease;
+    background-color: #008CBA;
+}
+/* END CHORD IMAGES */
 
 /* SIDE BAR NAV */
 .sidebarnav {
@@ -70,23 +115,29 @@ img.side-image {
 }
 
 @media screen and (max-height: 450px) {
-  .sidebarnav {padding-top: 15px;}
-  .sidebarnav a {font-size: 18px;}
+    .sidebarnav {
+        padding-top: 15px;
+    }
+
+    .sidebarnav a {
+        font-size: 18px;
+    }
 }
 
 #sidebarButton {
-  position: fixed;
-  right: 0;
-  top: 0;
-  padding: 20px;
-  color: rgb(236, 232, 227);
-  font-size: 25px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 20px;
+    color: rgb(236, 232, 227);
+    font-size: 25px;
 }
 
 #sidebarButton:hover {
-  color: rgb(217, 157, 73);
-  transition: 0.5s ease-in-out; 
+    color: rgb(217, 157, 73);
+    transition: 0.5s ease-in-out;
 }
+
 /* END OF SIDE BAR NAV */
 
 /* ACCORDION */
@@ -101,7 +152,8 @@ img.side-image {
     transition: 0.5s ease-in-out;
 }
 
-.active, .accordion:hover {
+.active,
+.accordion:hover {
     background-color: rgba(0, 0, 0, 0.25);
 }
 
@@ -111,7 +163,9 @@ img.side-image {
     overflow: hidden;
     transition: max-height 0.5s ease-out;
 }
+
 .panel a {
     font-size: 15px;
 }
+
 /* END OF ACCORDION */

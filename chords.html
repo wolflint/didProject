@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,11 +20,12 @@
 }
     </style>
 </head>
+
 <body>
     <span id="sidebarButton" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
     <div id="mySidenav" class="sidebarnav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    
+
         <a class="accordion">Chords</a>
         <div class="panel">
             <a href="chords.html#major">Major</a>
@@ -41,8 +43,8 @@
             <a href="#">Song 4</a>
             <a href="#">Song 5</a>
         </div>
-    
-    
+
+
         <a class="accordion">Guides</a>
         <div class="panel">
             <a href="#">Changing strings</a>
@@ -58,95 +60,135 @@
         <div class="row">
             <div class="one-half column">
                 <h1>Chords</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate amet, iste, nisi voluptate dignissimos ea ut suscipit mollitia dolor harum delectus, minus ratione sint quidem fuga reprehenderit. Similique, sed enim.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate amet, iste, nisi voluptate
+                    dignissimos ea ut suscipit mollitia dolor harum delectus, minus ratione sint quidem fuga
+                    reprehenderit. Similique, sed enim.</p>
 
             </div>
-            <img class="one-half column u-max-full-width side-image" src="https://source.unsplash.com/random/500x500" alt="Random Image">
+            <img class="one-half column u-max-full-width side-image" src="https://source.unsplash.com/random/500x500"
+                alt="Random Image">
         </div>
 
+        <!-- TO DO: Change this to grid with minmax(300px, 1fr) on a grid with repeat(3, 1f) -->
         <section id="major">
             <h1>The Major Chords</h1>
             <div class="row">
                 <div class="one-third column chords">
-                    <img src="assets/chords/images/a_maj.jpeg" alt="Image needs to change on mouse over" class="u-full-width">
+                    <div class="chord-images">
+                        <img src="assets/chords/images/a_maj.jpeg" alt="Image needs to change on mouse over" class="u-full-width">
+                        <div class="overlay">
+                            <img src="https://source.unsplash.com/random/500x500"
+                            alt="Random Image">
+                        </div>
+                    </div>
                     <div class="chord-image"></div>
                     <audio class="u-full-width" controls>
                         <!-- <source src="horse.ogg" type="audio/ogg"> -->
                         <source src="assets/chords/audio/a_maj.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                         Music: https://www.bensound.com
-                    </audio> 
-                    <h5>A Major</h5>
+                    </audio>
+                    <h5 class="chord-name">A Major</h5>
                 </div>
-    
+
                 <div class="one-third column chords">
-                    <img src="assets/chords/images/b_maj.jpeg" alt="Image needs to change on mouse over" class="u-full-width">
+                    <div class="chord-images">
+                        <img src="assets/chords/images/b_maj.jpeg" alt="Image needs to change on mouse over" class="u-full-width">
+                        <div class="overlay">
+                            <img src="https://source.unsplash.com/random/500x500" alt="Random Image">
+                        </div>
+                    </div>
                     <audio class="u-full-width" controls>
                         <!-- <source src="horse.ogg" type="audio/ogg"> -->
                         <source src="assets/chords/audio/b_maj.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                         Music: https://www.bensound.com
-                    </audio> 
-                    <h5>B Major</h5>
+                    </audio>
+                    <h5 class="chord-name">B Major</h5>
                 </div>
-    
+
                 <div class="one-third column chords">
-                    <img src="assets/chords/images/c_maj.jpeg" alt="Image needs to change on mouse over" class="u-full-width" onmouseover="changeImage()">
+                    <div class="chord-images">
+                        <img src="assets/chords/images/c_maj.jpeg" alt="Image needs to change on mouse over" class="u-full-width">
+                        <div class="overlay">
+                            <img src="https://source.unsplash.com/random/500x500" alt="Random Image">
+                        </div>
+                    </div>
                     <audio class="u-full-width" controls>
                         <!-- <source src="horse.ogg" type="audio/ogg"> -->
                         <source src="assets/chords/audio/c_maj.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                         Music: https://www.bensound.com
-                    </audio> 
-                    <h5>C Major</h5>
+                    </audio>
+                    <h5 class="chord-name">C Major</h5>
                 </div>
             </div>
-    
+
             <div class="row">
                 <div class="one-third column chords">
-                    <img src="assets/chords/images/d_maj.jpeg" alt="Image needs to change on mouse over" class="u-full-width">
+                    <div class="chord-images">
+                        <img src="assets/chords/images/d_maj.jpeg" alt="Image needs to change on mouse over" class="u-full-width">
+                        <div class="overlay">
+                            <img src="https://source.unsplash.com/random/500x500" alt="Random Image">
+                        </div>
+                    </div>
                     <audio class="u-full-width" controls>
                         <!-- <source src="horse.ogg" type="audio/ogg"> -->
                         <source src="assets/chords/audio/d_maj.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                         Music: https://www.bensound.com
-                    </audio> 
-                    <h5>D Major</h5>
+                    </audio>
+                    <h5 class="chord-name">D Major</h5>
                 </div>
-    
+
                 <div class="one-third column chords">
-                    <img src="assets/chords/images/e_maj.jpeg" alt="Image needs to change on mouse over" class="u-full-width">
+                    <div class="chord-images">
+                        <img src="assets/chords/images/e_maj.jpeg" alt="Image needs to change on mouse over" class="u-full-width">
+                        <div class="overlay">
+                            <img src="https://source.unsplash.com/random/500x500" alt="Random Image">
+                        </div>
+                    </div>
                     <audio class="u-full-width" controls>
                         <!-- <source src="horse.ogg" type="audio/ogg"> -->
                         <source src="assets/chords/audio/e_maj.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                         Music: https://www.bensound.com
-                    </audio> 
-                    <h5>E Major</h5>
+                    </audio>
+                    <h5 class="chord-name">E Major</h5>
                 </div>
-    
+
                 <div class="one-third column chords">
-                    <img src="assets/chords/images/f_maj.jpeg" alt="Image needs to change on mouse over" class="u-full-width">
+                    <div class="chord-images">
+                        <img src="assets/chords/images/f_maj.jpeg" alt="Image needs to change on mouse over" class="u-full-width">
+                        <div class="overlay">
+                            <img src="https://source.unsplash.com/random/500x500" alt="Random Image">
+                        </div>
+                    </div>
                     <audio class="u-full-width" controls>
                         <!-- <source src="horse.ogg" type="audio/ogg"> -->
                         <source src="assets/chords/audio/f_maj.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                         Music: https://www.bensound.com
-                    </audio> 
-                    <h5>F Major</h5>
+                    </audio>
+                    <h5 class="chord-name">F Major</h5>
                 </div>
             </div>
-    
+
             <div class="row">
                 <div class="one-third column chords">
-                    <img src="assets/chords/images/g_maj.jpeg" alt="Image needs to change on mouse over" class="u-full-width">
+                    <div class="chord-images">
+                        <img src="assets/chords/images/g_maj.jpeg" alt="Image needs to change on mouse over" class="u-full-width">
+                        <div class="overlay">
+                            <img src="https://source.unsplash.com/random/500x500" alt="Random Image">
+                        </div>
+                    </div>
                     <audio class="u-full-width" controls>
                         <!-- <source src="horse.ogg" type="audio/ogg"> -->
                         <source src="assets/chords/audio/g_maj.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                         Music: https://www.bensound.com
-                    </audio> 
-                    <h5>G Major</h5>
+                    </audio>
+                    <h5 class="chord-name">G Major</h5>
                 </div>
             </div>
         </section>
@@ -159,4 +201,5 @@
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
 </body>
+
 </html>
