@@ -7,8 +7,6 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>Groovy Guitars - Home</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -32,6 +30,7 @@
 
     body {
       display: flex;
+      height: 100vh;
       justify-content: center;
       align-items: center;
     }
@@ -92,8 +91,8 @@
     @media screen and (max-width: 760px) {
       main {
         grid-template-areas:
-        "welcome welcome logo"
-        "welcome welcome logo"
+        "welcome welcome welcome"
+        "links links links"
         "links links links";
       }
     }
@@ -152,9 +151,6 @@
       animation-duration: 5s;
       animation-iteration-count: infinite;
     }
-
-
-}
   </style>
 
 
@@ -180,42 +176,43 @@
     </div>
     <div class="links">
       <h2>⬇Handy Links</h2>
-      <a href="#chords">Chords</a>
+      <a href="chords.html">Chords</a>
       <a href="#guides">Guides</a>
       <a href="#songs">Songs</a>
     </div>
   </main>
 
   <div id="mySidenav" class="sidebarnav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+      <a class="accordion">Chords</a>
+      <div class="panel">
+          <a href="chords.html#major">Major</a>
+          <a href="#">Minor</a>
+          <a href="#">Major 7th</a>
+          <a href="#">Minor 7th</a>
+          <!-- <a href="#">Link</a> -->
+      </div>
 
-    <a class="accordion">Songs</a>
-    <div class="panel">
-      <a href="#">Song 1</a>
-      <a href="#">Song 2</a>
-      <a href="#">Song 3</a>
-      <a href="#">Song 4</a>
-      <a href="#">Song 5</a>
-    </div>
-
-    <a class="accordion">Chords</a>
-    <div class="panel">
-      <a href="#">Major</a>
-      <a href="#">Minor</a>
-      <a href="#">Major 7th</a>
-      <a href="#">Minor 7th</a>
-      <!-- <a href="#">Link</a> -->
-    </div>
-
-    <a class="accordion">Guides</a>
-    <div class="panel">
-      <a href="#">Changing strings</a>
-      <a href="#">Cleaning</a>
-      <a href="#">Tuning</a>
-      <!-- <a href="#">Link</a>
-        <a href="#">Link</a> -->
-    </div>
-    <!-- <a href="https://github.com/wolflint" class="signature" target="_blank">By Marcin Wolf</a> -->
+      <a class="accordion">Songs</a>
+      <div class="panel">
+          <a href="#">Song 1</a>
+          <a href="#">Song 2</a>
+          <a href="#">Song 3</a>
+          <a href="#">Song 4</a>
+          <a href="#">Song 5</a>
+      </div>
+  
+  
+      <a class="accordion">Guides</a>
+      <div class="panel">
+          <a href="#">Changing strings</a>
+          <a href="#">Cleaning</a>
+          <a href="#">Tuning</a>
+          <!-- <a href="#">Link</a>
+          <a href="#">Link</a> -->
+      </div>
+      <!-- <a href="https://github.com/wolflint" class="signature" target="_blank">By Marcin Wolf</a> -->
   </div>
 
   <span id="sidebarButton" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>

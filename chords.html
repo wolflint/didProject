@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Groovy Chords</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        html {
+         scroll-behavior: smooth;
+}
+    </style>
+</head>
+<body>
+    <span id="sidebarButton" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <div id="mySidenav" class="sidebarnav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <a class="accordion">Chords</a>
+        <div class="panel">
+            <a href="chords.html#major">Major</a>
+            <a href="#">Minor</a>
+            <a href="#">Major 7th</a>
+            <a href="#">Minor 7th</a>
+            <!-- <a href="#">Link</a> -->
+        </div>
+
+        <a class="accordion">Songs</a>
+        <div class="panel">
+            <a href="#">Song 1</a>
+            <a href="#">Song 2</a>
+            <a href="#">Song 3</a>
+            <a href="#">Song 4</a>
+            <a href="#">Song 5</a>
+        </div>
+    
+    
+        <a class="accordion">Guides</a>
+        <div class="panel">
+            <a href="#">Changing strings</a>
+            <a href="#">Cleaning</a>
+            <a href="#">Tuning</a>
+            <!-- <a href="#">Link</a>
+            <a href="#">Link</a> -->
+        </div>
+        <!-- <a href="https://github.com/wolflint" class="signature" target="_blank">By Marcin Wolf</a> -->
+    </div>
+
+    <main class="container" id="everything">
+        <div class="row">
+            <div class="one-half column">
+                <h1>Chords</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate amet, iste, nisi voluptate dignissimos ea ut suscipit mollitia dolor harum delectus, minus ratione sint quidem fuga reprehenderit. Similique, sed enim.</p>
+
+            </div>
+            <img class="one-half column u-max-full-width side-image" src="https://source.unsplash.com/random/500x500" alt="Random Image">
+        </div>
+
+        <section id="major">
+            <h1>The Major Chords</h1>
+            <div class="row">
+                <div class="one-third column">
+                    <img src="https://source.unsplash.com/random/300x300" alt="Image needs to change on mouse over" class="u-full-width">
+                    <div class="chord-image"></div>
+                    <audio class="u-full-width" controls>
+                        <!-- <source src="horse.ogg" type="audio/ogg"> -->
+                        <source src="assets/music.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                        Music: https://www.bensound.com
+                    </audio> 
+                    <h5>A Major</h5>
+                </div>
+    
+                <div class="one-third column">
+                    <img src="https://source.unsplash.com/random/300x300" alt="Image needs to change on mouse over" class="u-full-width">
+                    <audio class="u-full-width" controls>
+                        <!-- <source src="horse.ogg" type="audio/ogg"> -->
+                        <source src="assets/music.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                        Music: https://www.bensound.com
+                    </audio> 
+                    <h5>B Major</h5>
+                </div>
+    
+                <div class="one-third column">
+                    <img src="https://source.unsplash.com/random/300x300" alt="Image needs to change on mouse over" class="u-full-width" onmouseover="changeImage()">
+                    <audio class="u-full-width" controls>
+                        <!-- <source src="horse.ogg" type="audio/ogg"> -->
+                        <source src="assets/music.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                        Music: https://www.bensound.com
+                    </audio> 
+                    <h5>C Major</h5>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="one-third column">
+                    <img src="https://source.unsplash.com/random/300x300" alt="Image needs to change on mouse over" class="u-full-width">
+                    <audio class="u-full-width" controls>
+                        <!-- <source src="horse.ogg" type="audio/ogg"> -->
+                        <source src="assets/music.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                        Music: https://www.bensound.com
+                    </audio> 
+                    <h5>D Major</h5>
+                </div>
+    
+                <div class="one-third column">
+                    <img src="https://source.unsplash.com/random/300x300" alt="Image needs to change on mouse over" class="u-full-width">
+                    <audio class="u-full-width" controls>
+                        <!-- <source src="horse.ogg" type="audio/ogg"> -->
+                        <source src="assets/music.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                        Music: https://www.bensound.com
+                    </audio> 
+                    <h5>E Major</h5>
+                </div>
+    
+                <div class="one-third column">
+                    <img src="https://source.unsplash.com/random/300x300" alt="Image needs to change on mouse over" class="u-full-width">
+                    <audio class="u-full-width" controls>
+                        <!-- <source src="horse.ogg" type="audio/ogg"> -->
+                        <source src="assets/music.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                        Music: https://www.bensound.com
+                    </audio> 
+                    <h5>F Major</h5>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="one-third column">
+                    <img src="https://source.unsplash.com/random/300x300" alt="Image needs to change on mouse over" class="u-full-width">
+                    <audio class="u-full-width" controls>
+                        <!-- <source src="horse.ogg" type="audio/ogg"> -->
+                        <source src="assets/music.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                        Music: https://www.bensound.com
+                    </audio> 
+                    <h5>G Major</h5>
+                </div>
+            </div>
+        </section>
+        <!-- END OF MAJOR CHORDS -->
+
+
+
+    </main>
+    <!-- SCRIPTS -->
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
