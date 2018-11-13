@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>Groovy Guitars - Home</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -23,19 +22,30 @@
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/style.css">
   <style>
+    @import url('https://fonts.googleapis.com/css?family=Black+And+White+Picture');
+    @import url('../css/animate.css');
+    * {
+      color: whitesmoke;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+
     #myVideo {
     position: fixed;
     right: 0;
     bottom: 0;
     min-width: 100%; 
     min-height: 100%;
-    z-index: -1;
+    z-index: -10;
     }
 
-    /* CONTENT */
+    /* CONTENT
     .content {
-      /* position: fixed; */
-      /* bottom: 0; */
       background: rgba(0, 0, 0, 0);
       color: #f1f1f1;
       width: 100%;
@@ -51,12 +61,9 @@
     .link-text a{
       font-size: 35px;
       font-family: 'Rock Salt', cursive;
-      /* font-weight: bold; */
-      /* text-decoration: rgba(255, 255, 255, 0) wavy underline; */
       text-decoration: none;
       padding: 5px 10px 5px 10px;
       color: rgb(236, 232, 227);
-      /* border: 4mm ridge rgb(217, 157, 73, .6); */
       text-shadow:
         -1px -1px 0 rgb(40, 29, 18),
         1px -1px 0 rgb(40, 29, 18),
@@ -66,15 +73,84 @@
 
     .link-text a:hover {
       color: rgb(217, 157, 73);
-      /* border: 0.5rem outset rgb(165, 125, 75, .6); */
-      /* border-radius: 75px; */
-      /* text-decoration: rgb(204, 27, 56) wavy underline; */
       transition: 0.5s ease-in-out;
     }
-    /* END OF CONTENT */
+     END OF CONTENT */
+    main {
+      display: grid;
+      width: 75vw;
+      height: 100vh;
+      justify-items: center;
+      align-items: center;
+      grid-template-columns: repeat(3, minmax(min-content, 1fr));
+      grid-template-areas:
+        "welcome welcome welcome"
+        "logo logo links"
+        "logo logo links";
+    }
+    @media screen and (max-width: 760px) {
+      main {
+        grid-template-areas:
+        "welcome welcome welcome"
+        "links links links"
+        "links links links";
+      }
+    }
 
+    .welcome {
+      grid-area: welcome;
+      font-family: 'Black And White Picture', sans-serif;
+    }
+    .welcome h1 {
+      font-size: 84px;
+      text-shadow: 1px 1px 2px magenta, 0 0 1em blue, 0 0 0.2em blue;
+      text-align: center;
+      animation: lightSpeedIn 2s;
 
-}
+    }
+    .logo {
+      grid-area: logo;
+    }
+    .logo img {
+      box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.2);
+    }
+
+    .links {
+      grid-area: links;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      font-family: 'Black And White Picture', sans-serif;
+    }
+    .links a {
+      text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+      color: whitesmoke;
+      text-decoration: none;
+      font-size: 34px;
+      text-align: center;
+    }
+    .links h2 {
+      text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em yellowgreen;
+      font-size: 60px;
+      text-align: center;
+      animation-name: pulse;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+    
+    @keyframes link-animation {
+      0%  {color: yellow;}
+      25% {color: blue;}
+      50% {color: red;}
+      75% {color: yellowgreen;}
+      100% {color: whitesmoke;}
+    }
+
+    .links a:hover {
+      animation-name: link-animation;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+    }
   </style>
 
 
@@ -86,55 +162,61 @@
 
 
 <body>
-  <div id="main-content">
-    <video autoplay muted loop id="myVideo">
-      <source src="assets\bgVideo\bgVideo.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
-      </video>
-      
-      <div class="content link-text">
-        <!-- <div class="container "> -->
-          <div class="one-third column"><a href="#">Songs</a></div>
-          <div class="one-third column"><a href="#">Chords</a></div>
-          <div class="one-third column"><a href="#">Guides</a></div>
-          <!-- </div> -->
-      </div>
-  </div>
-    
-    <div id="mySidenav" class="sidebarnav">
+  <video autoplay muted loop id="myVideo">
+    <source src="assets\bgVideo\bgVideo.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <main>
+    <div class="welcome">
+      <h1>Welcome to Groovy Guitar Guides</h1>
+    </div>
+    <div class="logo">
+      <img src="https://source.unsplash.com/random/300x300" alt="Random Image">
+    </div>
+    <div class="links">
+      <h2>⬇Handy Links</h2>
+      <a href="chords.html">Chords</a>
+      <a href="#guides">Guides</a>
+      <a href="#songs">Songs</a>
+    </div>
+  </main>
+
+  <div id="mySidenav" class="sidebarnav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+      <a class="accordion">Chords</a>
+      <div class="panel">
+          <a href="chords.html#major">Major</a>
+          <a href="#">Minor</a>
+          <a href="#">Major 7th</a>
+          <a href="#">Minor 7th</a>
+          <!-- <a href="#">Link</a> -->
+      </div>
 
       <a class="accordion">Songs</a>
       <div class="panel">
-        <a href="#">Song 1</a>
-        <a href="#">Song 2</a>
-        <a href="#">Song 3</a>
-        <a href="#">Song 4</a>
-        <a href="#">Song 5</a>
+          <a href="#">Song 1</a>
+          <a href="#">Song 2</a>
+          <a href="#">Song 3</a>
+          <a href="#">Song 4</a>
+          <a href="#">Song 5</a>
       </div>
-      
-      <a class="accordion">Chords</a>
-      <div class="panel">
-        <a href="#">Major</a>
-        <a href="#">Minor</a>
-        <a href="#">Major 7th</a>
-        <a href="#">Minor 7th</a>
-        <!-- <a href="#">Link</a> -->
-      </div>
-      
+  
+  
       <a class="accordion">Guides</a>
       <div class="panel">
-        <a href="#">Changing strings</a>
-        <a href="#">Cleaning</a>
-        <a href="#">Tuning</a>
-        <!-- <a href="#">Link</a>
-        <a href="#">Link</a> -->
+          <a href="#">Changing strings</a>
+          <a href="#">Cleaning</a>
+          <a href="#">Tuning</a>
+          <!-- <a href="#">Link</a>
+          <a href="#">Link</a> -->
       </div>
       <!-- <a href="https://github.com/wolflint" class="signature" target="_blank">By Marcin Wolf</a> -->
-    </div>
+  </div>
 
-    <span id="sidebarButton" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-    
+  <span id="sidebarButton" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
   <script src="js\scripts.js"></script>
 
 </body>
