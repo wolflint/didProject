@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+        #app {
+            min-height: 100vh;
+
+            background: #BBC7CE;
+            }
+
+            #app > .row {
+            background: #fff;
+            }
+
+            h1 {
+            margin-bottom: 20px;
+            }
+
+            [v-cloak] {
+            display: none;
+            }
+    </style>
+</head>
+
+<body>
+    <div id="app" v-cloak>
+
+        <div class="row">
+            <div class="large-12 columns">
+                <h1>{{ quiz.title }}</h1>
+
+                <div class="callout">
+
+                    <div v-for="(question, index) in quiz.questions">
+                        <!-- Hide all questions, show only the one with index === to current question index -->
+                        <div v-show="index === questionIndex">
+                            <h3>{{ question.text }}</h3>
+                            <ol>
+                                <!-- for each response of the current question -->
+                                <li v-for="response in question.responses">
+                                    <label>
+                                        <input type="radio" v-bind:value="response.value" v-bind:name="index" v-model="userResponses[index]">
+                                        {{response.text}}
+                                    </label>
+                                </li>
+
+                            </ol>
+                            <!-- The two navigation buttons -->
+                            <!-- Note: prev is hidden on first question -->
+                            <button class="secondary button" v-if="questionIndex > 0" v-on:click="prev">
+                                prev
+                            </button>
+                            <button class="success button" v-on:click="next">
+                                next
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Last page, quiz is finished, display result -->
+                    <div v-show="questionIndex === quiz.questions.length">
+                        <h3>Your Results</h3>
+                        <p>
+                            You are: {{ score() }}
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="/js/guitarpicker.js"></script>
+</body>
+
+</html>
