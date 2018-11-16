@@ -1,0 +1,180 @@
+body {
+    font-family: "Roboto", arial;
+}
+
+#container {
+    margin: 0 auto;
+    width: 450px;
+    padding: 20px;
+    border: 1px solid #222;
+    border-radius: 10px;
+    background-color: #222;
+    position: relative;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.75);
+}
+
+h1 {
+    text-align: center;
+    color: #efe;
+    font-weight: 400;
+}
+
+#strict-indicator {
+    text-align: center;
+    color: #e74c3c;
+    margin-top: -10px;
+}
+
+.counter-container {
+    width: 100px;
+    height: 75px;
+    background-color: #000;
+    color: #efe;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#counter {
+    color: #efe;
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+.control-btn {
+    width: 100px;
+    height: 50px;
+    border: 1px solid #666;
+    background-color: #666;
+    color: #efe;
+    font-size: 20px;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.control-btn:hover {
+    background-color: #2ecc71;
+    cursor: pointer;
+    border: none;
+    box-shadow: inset 2px 2px 4px 0px rgba(0, 1, 1, 0.4);
+    margin: 2px 0 0 0;
+}
+
+.reset-style {
+    position: absolute;
+    top: 40px;
+    left: 350px;
+}
+
+.reset-style:hover {
+    background-color: #FF3924;
+}
+
+.btn--active {
+    background-color: #2ecc71;
+}
+
+/**Main Buttons */
+#btn-group {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.game-btn {
+    width: 75px;
+    height: 65px;
+    border: none;
+    margin-left: 10px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-size: 2rem  ;
+}
+
+.game-btn:hover {
+    cursor: pointer;
+}
+
+.btn--blue {
+    background-color: #1352D1;
+}
+
+.btn--blue:hover {
+    background-color: #89A8E8;
+}
+
+.btn--green {
+    background-color: #198C19;
+}
+
+.btn--green:hover {
+    background-color: #8cc58c;
+}
+
+.btn--red {
+    background-color: #CC0000;
+}
+
+.btn--red:hover {
+    background-color: #e06666;
+}
+
+.btn--yellow {
+    background-color: #FFFF5A;
+}
+
+.btn--yellow:hover {
+    background-color: #FFFFBD;
+}
+
+.btn--purple {
+    background-color: #800080;
+}
+
+.btn--purple:hover {
+    background-color: #bf7fbf;
+}
+
+.btn--pink {
+    background-color: #FFC0EB;
+}
+
+.btn--pink:hover {
+    background-color: #ff74d3;
+}
+
+/*JS Class to be added */
+.btn--blue__highlight {
+    background-color: #89A8E8;
+    border: solid 5px whitesmoke;
+}
+
+.btn--green__highlight {
+    background-color: #8cc58c;
+    border: solid 5px whitesmoke;
+}
+
+.btn--red__highlight {
+    background-color: #e06666;
+    border: solid 5px whitesmoke;
+}
+
+.btn--yellow__highlight {
+    background-color: #FFFFBD;
+    border: solid 5px whitesmoke;
+}
+
+.btn--purple__highlight {
+    background-color: #bf7fbf;
+    border: solid 5px whitesmoke;
+}
+
+.btn--pink__highlight {
+    background-color: #ff74d3;
+    border: solid 5px whitesmoke;
+}
