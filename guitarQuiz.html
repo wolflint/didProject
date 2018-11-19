@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Guitar Quiz</title>
+    <script src="js\guitarQuiz.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <form class="guitar-picker" id="picker" name="picker">
+      <script src="js\guitarQuiz.js" charset="utf-8"></script>
+      <p class="questions">What is your budget?</p>
+      <i>£</i>
+      <input type="number" name="Q1" id="price-slider" value="100" min="100" max="1500">
+
+      <p class="questions">What sort of guitar body style do you like?</p>
+      <input type="radio" name="Q2" value="hollow"> Hollow body<br>
+      <input type="radio" name="Q2" value="semihollow"> Semi-hollow body<br>
+      <input type="radio" name="Q2" value="solid"> Solid body<br>
+
+      <p class="questions">What tone are you looking for?</p>
+      <input type="radio" name="Q3" value="single"> Clean<br>
+      <input type="radio" name="Q3" value="humbuck"> Distorted<br>
+      <input type="radio" name="Q3" value="acoustic"> Acoustic<br>
+
+      <p class="questions">Do you wanna play lead guitar or rhythm guitar?</p>
+      <input type="radio" name="Q4" value="lead"> Lead<br>
+      <input type="radio" name="Q4" value="rhythm"> Rhythm<br>
+      <button type="button" name="button" onclick="pick();">Pick a guitar!</button>
+    </form>
+  </body>
+</html>

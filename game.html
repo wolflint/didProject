@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tuning Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/game.css" />
+    <script src="js/game.js"></script>
+</head>
+
+<body>
+    <!-- Audio Files -->
+    <div>
+        <audio id="blueSound" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3">
+            Your browser does not support the <code>audio</code> element.
+        </audio>
+        <audio id="greenSound" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3">
+            Your browser does not support the <code>audio</code> element.
+        </audio>
+        <audio id="redSound" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3">
+            Your browser does not support the <code>audio</code> element.
+        </audio>
+        <audio id="yellowSound" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3">
+            Your browser does not support the <code>audio</code> element.
+        </audio>
+        <audio id="purpleSound" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3">
+            Your browser does not support the <code>audio</code> element.
+        </audio>
+        <audio id="pinkSound" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3">
+            Your browser does not support the <code>audio</code> element.
+        </audio>
+    </div>
+
+    <!-- Game Container -->
+    <div class="container">
+    <!-- Game Config Controls -->
+
+        <h1 class="game-header">E Standard</h1>
+        <p id="strict-indicator"></p>
+        <button id="pwr-btn" class="control-btn">On/Off</button>
+        <button id="reset-btn" class="control-btn">Reset</button>
+        <div class="counter-container">
+            <p id="counter"></p>
+        </div>
+
+        <!-- Game Buttons -->
+        <div id="btn-group">
+            <button id="idBtnpink" class="game-btn btn--pink">E4</button>
+            <button id="idBtnpurple" class="game-btn btn--purple">B3</button>
+            <button id="idBtnyellow" class="game-btn btn--yellow">G3</button>
+            <button id="idBtnred" class="game-btn btn--red">D3</button>
+            <button id="idBtngreen" class="game-btn btn--green">A2</button>
+            <button id="idBtnblue" class="game-btn btn--blue">E2</button>
+        </div>
+    </div>
+    <!-- End of Game Container -->
+</body>
+
+</html>
