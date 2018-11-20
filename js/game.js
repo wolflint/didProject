@@ -49,11 +49,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 				userArr.push(3);
 			}	
 			else if(e.target.getAttribute('id').indexOf('purple') === 5){
-				document.getElementById('yellowSound').play();
+				document.getElementById('purpleSound').play();
 				userArr.push(4);
 			}	
 			else if(e.target.getAttribute('id').indexOf('pink') === 5){
-				document.getElementById('yellowSound').play();
+				document.getElementById('pinkSound').play();
 				userArr.push(5);
 			}	
 		}	
