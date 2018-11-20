@@ -1,8 +1,7 @@
-document.addEventListener("DOMContentLoaded", function(event) { 
+document.addEventListener("DOMContentLoaded", function (event) {
 	//variables
 	var count = 0;
 	var onoff = false;
-	// var strictPlay = '';
 	var userTurn = false;
 	var userArr = [];
 	var simonArr = [];
@@ -10,90 +9,84 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	var match;
 
 	//Reset Button Pushed
-	document.getElementById('reset-btn').addEventListener('click', function(){
-		console.log('Restarting game...');
+	document.getElementById('reset-btn').addEventListener('click', function () {
+		alert('Restarting game...');
 		gameover();
 	});
 	//Power Button Pushed
-	document.getElementById('pwr-btn').addEventListener('click', function(){
+	document.getElementById('pwr-btn').addEventListener('click', function () {
 		//Turn on game
-		if (!onoff){
+		if (!onoff) {
 			this.classList.add('btn--active'); //Makes button pushed
 			onoff = true; // Allows user to click on buttons
-			console.log('Game on')
 			gamePlay(); //Start game play 
 		}
 		//Turn off game
 		else {
-			console.log('Turning off game.');
+			alert('Turning off game.');
 			gameover();
 		}
 	});
 	//Main button listener
-	document.getElementById('btn-group').addEventListener('click', function(e){
-		if (onoff && userTurn){//Regular game play
-			if(e.target.getAttribute('id').indexOf('blue') === 5 ){
+	document.getElementById('btn-group').addEventListener('click', function (e) {
+		if (onoff && userTurn) { //Regular game play
+			if (e.target.getAttribute('id').indexOf('blue') === 5) {
 				document.getElementById('blueSound').play();
 				userArr.push(0);
-			}
-			else if(e.target.getAttribute('id').indexOf('green') === 5){
+			} else if (e.target.getAttribute('id').indexOf('green') === 5) {
 				document.getElementById('greenSound').play();
 				userArr.push(1);
-			}
-			else if(e.target.getAttribute('id').indexOf('red') === 5){
+			} else if (e.target.getAttribute('id').indexOf('red') === 5) {
 				document.getElementById('redSound').play();
 				userArr.push(2);
-			}
-			else if(e.target.getAttribute('id').indexOf('yellow') === 5){
+			} else if (e.target.getAttribute('id').indexOf('yellow') === 5) {
 				document.getElementById('yellowSound').play();
 				userArr.push(3);
-			}	
-			else if(e.target.getAttribute('id').indexOf('purple') === 5){
+			} else if (e.target.getAttribute('id').indexOf('purple') === 5) {
 				document.getElementById('purpleSound').play();
 				userArr.push(4);
-			}	
-			else if(e.target.getAttribute('id').indexOf('pink') === 5){
+			} else if (e.target.getAttribute('id').indexOf('pink') === 5) {
 				document.getElementById('pinkSound').play();
 				userArr.push(5);
-			}	
-		}	
-		
-		if(onoff && userArr.length === simonArr.length){
+			}
+		}
+
+		if (onoff && userArr.length === simonArr.length) {
 			match = checkPlayerPattern(userArr);
 
 			//both array patterns match (player entered correct pattern)
-			if(match){
-                count += 1;
-                setTimeout(gamePlay, 1500);
+			if (match) {
+				count += 1;
+				setTimeout(gamePlay, 1500);
 			}
 		}
-		if(count === 20){ // End of game play 
+		if (count === 20) { // End of game play 
 			//Execute when the user reaches the end of the pattern.
 			alert("You've Reached the end! Congrats you beat the game!");
 			gameover();
 		}
 
-		if(!onoff){
+		if (!onoff) {
 			alert('You must first push on/off!');
 		}
 	});
 	//Compare | Check for winner
-	function checkPlayerPattern(usrArr){
+	function checkPlayerPattern(usrArr) {
 		var matchCount = 0;
-		usrArr.forEach(function(curr, i, arr){
-			if(simonArr[i] === curr){
+		usrArr.forEach(function (curr, i, arr) {
+			if (simonArr[i] === curr) {
 				matchCount += 1;
 			}
 		});
-		if(matchCount === usrArr.length)
+		if (matchCount === usrArr.length)
 			return true;
 		else
 			return false;
 	};
 	//Gameover | Clear all variables
-	function gameover(){
+	function gameover() {
 		onoff = false;
-		count = 0; 		
+		count = 0;
 		strict = false;
 		userTurn = false;
 		simonArr = [];
@@ -103,49 +96,48 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		document.getElementById('pwr-btn').classList.remove('btn--active');
 	}
 	//Plays sequence depending on the array values
-	function playPattern(arr){
+	function playPattern(arr) {
 		document.getElementById('counter').innerHTML = arr.length;
 		var patternIDs = {
 			0: 'blue',
 			1: 'green',
 			2: 'red',
-            3: 'yellow',
-            4: 'purple',
-            5: 'pink'
+			3: 'yellow',
+			4: 'purple',
+			5: 'pink'
 		}
-		arr.forEach(function(val,x){
-			var myTimer = setTimeout(playAudio, 1000*x , patternIDs[val], x, arr);	
-			if(x === arr.length){
+		arr.forEach(function (val, x) {
+			var myTimer = setTimeout(playAudio, 1000 * x, patternIDs[val], x, arr);
+			if (x === arr.length) {
 				clearTimeout(myTimer);
 			}
 		});
 	};
 	//Play audio
-	function playAudio(id, x, arr){
-		document.getElementById('idBtn' + id).classList.add('btn--' + id +'__highlight');
-		document.getElementById(id+ 'Sound').play();
-		if(arr.length !== x)
-			var otherTimer = setTimeout(removeHighlight, 500, id);	
+	function playAudio(id, x, arr) {
+		document.getElementById('idBtn' + id).classList.add('btn--' + id + '__highlight');
+		document.getElementById(id + 'Sound').play();
+		if (arr.length !== x)
+			var otherTimer = setTimeout(removeHighlight, 500, id);
 		else
 			clearTimeout(otherTimer);
-	};
+	}
 	//Remove Highlight
-	function removeHighlight(id){
-		document.getElementById('idBtn' + id).classList.toggle('btn--' + id +'__highlight');
-	};
+	function removeHighlight(id) {
+		document.getElementById('idBtn' + id).classList.toggle('btn--' + id + '__highlight');
+	}
 	//main gameplay
-	function gamePlay(){
+	function gamePlay() {
 		userTurn = false;
 		userArr = [];
-		if(strict){
+		if (strict) {
 			simonArr.push(Math.floor(Math.random() * 6) + 0); //Generates number between 0 - 3
 			playPattern(simonArr);
 			userTurn = true;
-		}
-		else{
+		} else {
 			simonArr.push(Math.floor(Math.random() * 6) + 0); //Generates number between 0 - 3	
-			playPattern(simonArr);		
+			playPattern(simonArr);
 			userTurn = true;
 		}
-	};
+	}
 });
