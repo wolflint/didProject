@@ -3,12 +3,12 @@ h1 {
     color: #efe;
     font-weight: 400;
 }
-
+/* 
 #strict-indicator {
     text-align: center;
     color: #e74c3c;
     margin-top: -10px;
-}
+} */
 
 .counter-container {
     width: 100px;
@@ -64,26 +64,33 @@ h1 {
     display: grid;
     max-height: 100vh;
     width: 100%;
-    max-width: 750px;
     grid-template-rows: repeat(6, 1fr);
     justify-content: center;
     justify-self: center;
     margin-top: 20px;
 }
 
-.game-btn {
-    width: 100vw;
-    height: 65px;
-    border: none;
-    margin-left: 10px;
+#btn-group > button {
+    width: 400px;
+    height: 50px;
+    border: solid 5px black;
+    cursor: pointer;
+    transition: 0.2s;
     color: white;
-    text-shadow: 1px 1px 2px black;
     font-size: 2rem;
-    display: block;
+    text-shadow: 1px 1px 2px black;
 }
 
-.game-btn:hover {
-    cursor: pointer;
+
+/* BUTTON COLOUR STUFF */
+/* .game-btn {
+    width: 100vw;
+    border: none;
+    margin-left: 10px;
+    display: block;
+} */
+
+#btn-group > button:hover {
     border: solid 5px whitesmoke;    
 }
 
@@ -92,7 +99,7 @@ h1 {
 }
 
 .btn--blue:hover {
-    background-color: #89A8E8;
+    background-color: #ecad2e;
 }
 
 .btn--green {
@@ -100,23 +107,23 @@ h1 {
 }
 
 .btn--green:hover {
-    background-color: #8cc58c;
+    background-color: #e673e6;
 }
 
 .btn--red {
-    background-color: #CC0000;
+    background-color: #c93535;
 }
 
 .btn--red:hover {
-    background-color: #e06666;
+    background-color: #36caca;
 }
 
 .btn--yellow {
-    background-color: #FFFF5A;
+    background-color: #fbff14;
 }
 
 .btn--yellow:hover {
-    background-color: #FFFFBD;
+    background-color: #0400eb;
 }
 
 .btn--purple {
@@ -124,7 +131,7 @@ h1 {
 }
 
 .btn--purple:hover {
-    background-color: #bf7fbf;
+    background-color: #7fff7f;
 }
 
 .btn--pink {
@@ -132,36 +139,30 @@ h1 {
 }
 
 .btn--pink:hover {
-    background-color: #ff74d3;
+    background-color: #003f14;
 }
 
 /*JS Class to be added */
 .btn--blue__highlight {
-    background-color: #89A8E8;
-    border: solid 5px yellowgreen;
+    background-color: #ecad2e;
 }
 
 .btn--green__highlight {
-    background-color: #8cc58c;
-    border: solid 5px yellowgreen;
+    background-color: #e673e6;
 }
 
 .btn--red__highlight {
-    background-color: #e06666;
-    border: solid 5px yellowgreen;
+    background-color: #36caca;
 }
 
 .btn--yellow__highlight {
-    background-color: #FFFFBD;
-    border: solid 5px yellowgreen;
+    background-color: #0400eb;
 }
 
 .btn--purple__highlight {
-    background-color: #bf7fbf;
-    border: solid 5px yellowgreen;
+    background-color: #7fff7f;
 }
 
 .btn--pink__highlight {
-    background-color: #ff74d3;
-    border: solid 5px yellowgreen;
+    background-color: #003f14;
 }
