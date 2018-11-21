@@ -28,7 +28,7 @@ main {
   grid-template-areas:
     "welcome welcome welcome"
     "links links links"
-    "links links links";
+    "links links links";index.html#songs
   animation: lightSpeedIn 2s;
 }
 

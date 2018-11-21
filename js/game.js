@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                     setTimeout(playPattern(simonArr), 2000);
                     userArr = [];
                     userTurn = true;
-                }
+                }index.html#songs
             }
         }
         if (count === 20) { // End of game play 
