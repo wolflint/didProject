@@ -143,7 +143,7 @@ h1 {
 }
 
 /*JS Class to be added */
-.btn--blue__highlight {
+/* .btn--blue__highlight {
     background-color: #ecad2e;
 }
 
@@ -161,8 +161,8 @@ h1 {
 
 .btn--purple__highlight {
     background-color: #7fff7f;
-}
+} */
 
-.btn--pink__highlight {
-    background-color: #003f14;
+.btn--pink__highlight, .btn--purple__highlight, .btn--yellow__highlight, .btn--red__highlight, .btn--green__highlight, .btn--blue__highlight  {
+    background-color: white;
 }
