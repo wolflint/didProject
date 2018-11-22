@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     //Reset Button Pushed
     document.getElementById('reset-btn').addEventListener('click', function () {
         alert('Restarting game...');
-        gameover();
+        gameOver();
     });
     //Power Button Pushed
     document.getElementById('pwr-btn').addEventListener('click', function () {
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         //Turn off game
         else {
             alert('Turning off game.');
-            gameover();
+            gameOver();
         }
     });
     //Main button listener
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             } else {
                 if (strict) {
                     alert('Wrong. During "strict" play you are not allowed to miss more than 1. Start over.');
-                    gameover();
+                    gameOver();
                 } else {
                     alert('Try again!');
                     setTimeout(playPattern(simonArr), 2000);
@@ -85,11 +85,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         if (count === 20) { // End of game play 
             //Execute when the user reaches the end of the pattern.
             alert("You've Reached the end! Congrats you beat the game!");
-            gameover();
-        }
-
-        if (!onoff) {
-            alert('You must first push on/off!');
+            gameOver();
         }
     });
     //Compare | Check for winner
@@ -105,8 +101,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
         else
             return false;
     };
-    //Gameover | Clear all variables
-    function gameover() {
+    //gameOver | Clear all variables
+    function gameOver() {
         onoff = false;
         count = 0;
         strict = false;
