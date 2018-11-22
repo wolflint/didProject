@@ -1,4 +1,7 @@
+/* IMPORT CSS */
+@import url('https://fonts.googleapis.com/css?family=Black+And+White+Picture');
 @import url('https://fonts.googleapis.com/css?family=Monoton|Rock+Salt');
+@import url('../css/animate.css');
 
 * {
     box-sizing: border-box;

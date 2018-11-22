@@ -1,15 +1,12 @@
+@import url('../css/main.css');
+
 h1 {
     text-align: center;
     color: #efe;
     font-weight: 400;
 }
-/* 
-#strict-indicator {
-    text-align: center;
-    color: #e74c3c;
-    margin-top: -10px;
-} */
 
+/* COUNTER */
 .counter-container {
     width: 100px;
     height: 75px;
@@ -28,17 +25,13 @@ h1 {
     font-size: 30px;
 }
 
+/* CONTROL BUTTONS */
 .control-btn {
-    /* width: 100px; */
-    /* height: 50px; */
     border: 1px solid #666;
     background-color: #666;
     color: #efe;
     font-size: 20px;
     box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.4);
-    /* position: absolute; */
-    /* top: 40px; */
-    /* left: 40px; */
 }
 
 .control-btn:hover {
@@ -52,15 +45,12 @@ h1 {
     background: #CC0000;
 }
 
-
+/* GAME BUTTONS */
 .btn--active {
     background-color: #2ecc71;
 }
 
-/**Main Buttons */
 #btn-group {
-    /* display: flex;
-    flex-flow: row nowrap; */
     display: grid;
     max-height: 100vh;
     width: 100%;
@@ -81,15 +71,6 @@ h1 {
     text-shadow: 1px 1px 2px black;
 }
 
-
-/* BUTTON COLOUR STUFF */
-/* .game-btn {
-    width: 100vw;
-    border: none;
-    margin-left: 10px;
-    display: block;
-} */
-
 #btn-group > button:hover {
     border: solid 5px whitesmoke;    
 }
@@ -98,71 +79,26 @@ h1 {
     background-color: #1352D1;
 }
 
-.btn--blue:hover {
-    background-color: #ecad2e;
-}
-
 .btn--green {
     background-color: #198C19;
-}
-
-.btn--green:hover {
-    background-color: #e673e6;
 }
 
 .btn--red {
     background-color: #c93535;
 }
 
-.btn--red:hover {
-    background-color: #36caca;
-}
-
 .btn--yellow {
     background-color: #fbff14;
-}
-
-.btn--yellow:hover {
-    background-color: #0400eb;
 }
 
 .btn--purple {
     background-color: #800080;
 }
 
-.btn--purple:hover {
-    background-color: #7fff7f;
-}
-
 .btn--pink {
     background-color: #FFC0EB;
 }
 
-.btn--pink:hover {
-    background-color: #003f14;
-}
-
-/*JS Class to be added */
-/* .btn--blue__highlight {
-    background-color: #ecad2e;
-}
-
-.btn--green__highlight {
-    background-color: #e673e6;
-}
-
-.btn--red__highlight {
-    background-color: #36caca;
-}
-
-.btn--yellow__highlight {
-    background-color: #0400eb;
-}
-
-.btn--purple__highlight {
-    background-color: #7fff7f;
-} */
-
 .btn--pink__highlight, .btn--purple__highlight, .btn--yellow__highlight, .btn--red__highlight, .btn--green__highlight, .btn--blue__highlight  {
-    background-color: white;
+    animation: shake 0.5s;
 }

@@ -1,6 +1,5 @@
 /* IMPORT CSS */
-@import url('https://fonts.googleapis.com/css?family=Black+And+White+Picture');
-@import url('../css/animate.css');
+@import url('../css/main.css');
 
 /* ELEMENT STYLING */
 * {
@@ -28,7 +27,7 @@ main {
   grid-template-areas:
     "welcome welcome welcome"
     "links links links"
-    "links links links";index.html#songs
+    "links links links";
   animation: lightSpeedIn 2s;
 }
 
