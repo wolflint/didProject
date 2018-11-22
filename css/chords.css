@@ -1,0 +1,54 @@
+/* IMPORT CSS */
+@import url('https://fonts.googleapis.com/css?family=Black+And+White+Picture');
+@import url('https://fonts.googleapis.com/css?family=Monoton|Rock+Salt');
+@import url('../css/normalize.css');
+@import url('../css/skeleton.css');
+@import url('../css/animate.css');
+@import url('../css/main.css');
+
+.chords {
+    /* background: white; */
+    margin: 10px;
+    border: 2px solid white;
+    box-shadow: -1px 1px 10px 3px #DCE2E2, 0px 0px 5px -100px #D6C9C9;
+}
+
+.chord-name {
+    padding: 0 10px 0 10px;
+    text-shadow: 1px 1px 2px magenta,
+    0 0 1em blue,
+    0 0 0.2em blue;
+    transition: 1s;
+}
+
+.chords:hover .chord-name{
+    text-shadow: 1px 1px 2px green,
+    0 0 1em yellowgreen,
+    0 0 0.2em lawngreen;
+}
+
+/* CHORD IMAGES */
+.chord-images {
+    position: relative;
+}
+.chord-images img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.chord-images:hover .overlay {
+    opacity: 1;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1s ease;
+    background-color: #008CBA;
+}
+/* END CHORD IMAGES */
