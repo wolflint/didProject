@@ -1,4 +1,9 @@
 /* IMPORT CSS */
+@import url('https://fonts.googleapis.com/css?family=Black+And+White+Picture');
+@import url('https://fonts.googleapis.com/css?family=Monoton|Rock+Salt');
+@import url('../css/normalize.css');
+@import url('../css/skeleton.css');
+@import url('../css/animate.css');
 @import url('../css/main.css');
 
 /* ELEMENT STYLING */
