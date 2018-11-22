@@ -1,4 +1,4 @@
-#Groovy Guitar Guides Website
+# Groovy Guitar Guides Website
 
 ---
 
