@@ -6,9 +6,46 @@
 @import url('../css/animate.css');
 @import url('../css/main.css');
 
+.header-grid {
+    display: grid;
+    width: 100%;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr) );
+    justify-items: center;
+    align-items: center;
+}
+/* .header-item {
+    width: 100%;
+} */
+
+.header-item1 {
+    grid-column: 1 / -1;
+}
+
+.header-item2 {
+    grid-column: span 1;
+    width: 100%;
+}
+.header-item2 img {
+    box-shadow: -1px 1px 10px 3px #DCE2E2, 0px 0px 5px -100px #D6C9C9;
+    align-self: center;
+}
+
+.header-item3 {
+    grid-column: span 1;
+    align-self: center;
+}
+
+.chord-grid {
+    display: grid;
+    width: 100%;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr) );
+    justify-items: center;
+    align-items: center;
+}
+
 .chords {
-    /* background: white; */
-    margin: 10px;
     border: 2px solid white;
     box-shadow: -1px 1px 10px 3px #DCE2E2, 0px 0px 5px -100px #D6C9C9;
 }
@@ -19,6 +56,7 @@
     0 0 1em blue,
     0 0 0.2em blue;
     transition: 1s;
+    text-align: center;
 }
 
 .chords:hover .chord-name{
