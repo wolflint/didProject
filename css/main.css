@@ -10,18 +10,53 @@
     box-sizing: border-box;
 }
 h1, h2, h3, h4, h5, h6 {
-      text-shadow: 1px 1px 2px magenta,
-      0 0 1em blue,
-      0 0 0.2em blue;
+    text-shadow: 1px 1px 2px magenta,
+    0 0 1em blue,
+    0 0 0.2em blue;
 }
 
 body {
+    scroll-behavior: smooth;
     margin: 0;
     font-size: 17px;
     background: url(../assets/patter3.png) repeat;
     /* color: #f0f0f0; */
     color: #ede5db;
-    /* color: #d99d49; */
+    padding-bottom: 60px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    margin: 0;
+}
+
+nav li {
+    margin: 0;
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
 }
 
 .container {
@@ -36,7 +71,7 @@ body {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     left: 0;
     background-color: #111;
@@ -73,4 +108,22 @@ body {
   .sidenav a {font-size: 18px;}
 }
 
+.mobile-nav-button {
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 15px;
+    z-index: 1;
+}
+@media screen and (max-width: 750px) {
+    .hide-on-small {
+        display: none;
+    }
+}
+@media screen and (min-width: 750px) {
+    .hide-on-large {
+        display: none;
+    }
+}
 /* END OF SIDE NAV ON MOBILE */
