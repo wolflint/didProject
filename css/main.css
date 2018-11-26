@@ -9,20 +9,34 @@
 * {
     box-sizing: border-box;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     text-shadow: 1px 1px 2px magenta,
-    0 0 1em blue,
-    0 0 0.2em blue;
+        0 0 1em blue,
+        0 0 0.2em blue;
+}
+
+html {
+    background: url(../assets/patter3.png) repeat;
 }
 
 body {
+    font-family: 'Black And White Picture', sans-serif;
     scroll-behavior: smooth;
     margin: 0;
     font-size: 17px;
-    background: url(../assets/patter3.png) repeat;
-    /* color: #f0f0f0; */
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 0.75) 0%, rgba(253, 29, 29, 0.75) 50%, rgba(252, 176, 69, 1) 100%);
     color: #ede5db;
     padding-bottom: 60px;
+}
+p {
+    font-size: 28px;
 }
 
 nav ul {
@@ -30,7 +44,7 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.8);
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -40,7 +54,7 @@ nav ul {
 
 nav li {
     margin: 0;
-    float: left;
+    float: right;
 }
 
 nav li a {
@@ -56,7 +70,7 @@ nav li a:hover:not(.active) {
 }
 
 .active {
-    background-color: #4CAF50;
+    background-color: rgb(101, 29, 150);
 }
 
 .container {
@@ -78,7 +92,7 @@ nav li a:hover:not(.active) {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    text-align:center;
+    text-align: center;
 }
 
 .sidenav a {
@@ -91,7 +105,7 @@ nav li a:hover:not(.active) {
 
 }
 
-.sidenav a:hover{
+.sidenav a:hover {
     color: #f1f1f1;
 }
 
@@ -104,8 +118,13 @@ nav li a:hover:not(.active) {
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
 }
 
 .mobile-nav-button {
@@ -115,15 +134,19 @@ nav li a:hover:not(.active) {
     left: 0;
     margin: 15px;
     z-index: 1;
+    font-size: 3rem;
 }
+
 @media screen and (max-width: 750px) {
     .hide-on-small {
         display: none;
     }
 }
+
 @media screen and (min-width: 750px) {
     .hide-on-large {
         display: none;
     }
 }
+
 /* END OF SIDE NAV ON MOBILE */
