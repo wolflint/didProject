@@ -13,6 +13,11 @@
     box-shadow: -1px 1px 10px 3px #DCE2E2, 0px 0px 5px -100px #D6C9C9;
 }
 
+img.side-image {
+    margin: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(247, 247, 247, 0.4);
+}
+
 .chord-name {
     padding: 0 10px 0 10px;
     text-shadow: 1px 1px 2px magenta,
