@@ -6,6 +6,28 @@
 @import url('../css/skeleton.css');
 @import url('../css/animate.css');
 
+/* ANIMATIONS */
+@keyframes link-animation {
+    0% {
+      color: yellow;
+    }
+  
+    25% {
+      color: blue;
+    }
+  
+    50% {
+      color: red;
+    }
+  
+    75% {
+      color: yellowgreen;
+    }
+  
+    100% {
+      color: whitesmoke;
+    }
+  }
 ::selection {
     background: purple;
 }
@@ -35,10 +57,7 @@ body {
     font-size: 17px;
     color: #ede5db;
 }
-.container {
-    min-height: 100vh;
-    margin-bottom: 50px;
-}
+
 .gradient {
     position: fixed;
     z-index: -1;
@@ -83,17 +102,23 @@ nav li a {
 
 nav li a:hover:not(.active) {
     background-color: #111;
+    animation-name: link-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 .active {
     background-color: rgb(101, 29, 150);
 }
+.active:hover {
+    color: gold;
+}
 
 .container {
     padding: 20px 25px 20px 25px;
-    /* background: rgba(40, 29, 18, 0.6); */
     background: rgba(0, 0, 0, 0.6);
     border-radius: 25px;
+    margin-bottom: 50px;
 }
 
 /* SIDE NAV ON MOBILE */
@@ -123,7 +148,9 @@ nav li a:hover:not(.active) {
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+    animation-name: link-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 .sidenav .closebtn {
@@ -155,6 +182,22 @@ nav li a:hover:not(.active) {
     background: rgba(0, 0, 0, 0.5);
     border-radius: 100%;
 }
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+  
+  .links a:hover {
+    animation-name: link-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+
 
 @media screen and (max-width: 750px) {
     .hide-on-small {

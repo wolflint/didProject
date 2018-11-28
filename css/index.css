@@ -108,34 +108,6 @@ main {
   animation-iteration-count: infinite;
 }
 
-@keyframes link-animation {
-  0% {
-    color: yellow;
-  }
-
-  25% {
-    color: blue;
-  }
-
-  50% {
-    color: red;
-  }
-
-  75% {
-    color: yellowgreen;
-  }
-
-  100% {
-    color: whitesmoke;
-  }
-}
-
-.links a:hover {
-  animation-name: link-animation;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-}
-
 /* END LINKS */
 
 /* END LINKS */

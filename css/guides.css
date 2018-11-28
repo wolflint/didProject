@@ -8,6 +8,7 @@
 .guide-thumb-text {
     padding-left: 20px;
     padding-right: 20px;
+    color: inherit;
 }
 
 a.guide-links {
@@ -17,9 +18,15 @@ a.guide-links {
 
 .guide-thumb:hover {
     border: double purple 5px;
-    color: cornflowerblue;
+    animation-name: link-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 .row {
     margin-bottom: 20px;
+}
+
+.guide-link-text {
+    font-size: 3rem;
 }
