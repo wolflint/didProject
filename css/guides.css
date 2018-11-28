@@ -1,0 +1,32 @@
+.guide-thumb {
+    border: double white 5px;
+    transition: 0.5s;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2)
+}
+
+.guide-thumb-text {
+    padding-left: 20px;
+    padding-right: 20px;
+    color: inherit;
+}
+
+a.guide-links {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.guide-thumb:hover {
+    border: double purple 5px;
+    animation-name: link-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+.guide-link-text {
+    font-size: 3rem;
+}
