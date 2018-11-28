@@ -6,6 +6,9 @@
 @import url('../css/skeleton.css');
 @import url('../css/animate.css');
 
+::selection {
+    background: purple;
+}
 * {
     box-sizing: border-box;
 }
@@ -31,7 +34,10 @@ body {
     margin: 0;
     font-size: 17px;
     color: #ede5db;
-    padding-bottom: 60px;
+}
+.container {
+    min-height: 100vh;
+    margin-bottom: 50px;
 }
 .gradient {
     position: fixed;
@@ -45,12 +51,16 @@ p {
     font-size: 28px;
 }
 
+
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.8);
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    background-image: url('../assets/navPattern.png');
+    background-repeat: repeat-x;
+    opacity: 0.8;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -80,9 +90,10 @@ nav li a:hover:not(.active) {
 }
 
 .container {
-    padding: 64px 25px 0 25px;
+    padding: 20px 25px 20px 25px;
     /* background: rgba(40, 29, 18, 0.6); */
-    background: rgba(0, 0, 0, 0.6)
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 25px;
 }
 
 /* SIDE NAV ON MOBILE */
@@ -148,6 +159,9 @@ nav li a:hover:not(.active) {
 @media screen and (max-width: 750px) {
     .hide-on-small {
         display: none;
+    }
+    .container {
+        margin-bottom: 0;
     }
 }
 
