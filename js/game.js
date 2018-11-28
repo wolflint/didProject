@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         userTurn = false;
         simonArr = [];
         userArr = [];
-        document.getElementById('counter').innerHTML = '';
+        document.getElementById('counter').innerHTML = 'Off';
         document.getElementById('strict-indicator').innerHTML = '';
         document.getElementById('pwr-btn').classList.remove('btn--active');
     }
