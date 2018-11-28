@@ -58,6 +58,12 @@ body {
     color: #ede5db;
 }
 
+a:hover:not(.active){
+    animation-name: link-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
 .gradient {
     position: fixed;
     z-index: -1;
@@ -102,13 +108,10 @@ nav li a {
 
 nav li a:hover:not(.active) {
     background-color: #111;
-    animation-name: link-animation;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
 }
 
 .active {
-    background-color: rgb(101, 29, 150);
+    background-color: rgba(147, 46, 214, 0.582);
 }
 .active:hover {
     color: gold;
@@ -145,12 +148,6 @@ nav li a:hover:not(.active) {
     display: block;
     transition: 0.3s;
 
-}
-
-.sidenav a:hover {
-    animation-name: link-animation;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
 }
 
 .sidenav .closebtn {
@@ -190,14 +187,6 @@ nav li a:hover:not(.active) {
 .right {
     float: right;
 }
-
-  
-  .links a:hover {
-    animation-name: link-animation;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-  }
-
 
 @media screen and (max-width: 750px) {
     .hide-on-small {
