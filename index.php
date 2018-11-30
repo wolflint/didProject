@@ -10,7 +10,6 @@
   <link rel="shortcut icon" type="image/png" href="assets/logo.png">
 </head>
 
-
 <body>
   <div class="gradient"></div>
   <!-- BACKGROUND VIDEO -->
@@ -21,7 +20,7 @@
   </video>
 
   <!-- LOGO -->
-  <a href="index.html">
+  <a href="index.php">
     <img src="./assets/logo.png" alt="Groovy Guitars Logo" class="logo">
   </a>
   <main>
@@ -31,9 +30,9 @@
     <!-- LINKS -->
     <div class="links">
       <h2>⬇Handy Links</h2>
-      <a href="chords.html">Chords</a>
-      <a href="guides.html">Guides</a>
-      <a href="songs.html">Songs</a>
+      <a href="chords.php">Chords</a>
+      <a href="guides.php">Guides</a>
+      <a href="songs.php">Songs</a>
     </div>
   </main>
 

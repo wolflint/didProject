@@ -12,26 +12,9 @@
 
 <body>
     <div class="gradient"></div>
-    <!-- NAVIGATION -->
-    <span class="mobile-nav-button hide-on-large" onclick="openNav()">&#9776;</span>
 
-    <nav class="hide-on-small">
-        <ul>
-            <li style="float: left"><a href="index.html"><i class="fa fa-fw fa-home"></i>GGG</a></li>
-            <li><a href="songs.html">Songs</a></li>
-            <li><a href="guides.html" class="active">Guides</a></li>
-            <li><a href="chords.html">Chords</a></li>
-        </ul>
-    </nav>
+    <?php include 'navBar.php'; ?>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html"><i class="fa fa-fw fa-home"></i>GGG</a>
-        <a href="chords.html" class="active">Chords</a>
-        <a href="guides.html">Guides</a>
-        <a href="songs.html">Songs</a>
-    </div>
-    <!-- END OF NAVIGATOIN -->
     <div class="container">
         <h1>Groovy Guitar Guides - How To Section</h1>
 

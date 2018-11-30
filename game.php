@@ -12,31 +12,8 @@
 
   <body>
     <div class="gradient"></div>
-    <!-- NAVIGATION -->
-    <span class="mobile-nav-button hide-on-large" onclick="openNav()"
-      >&#9776;</span
-    >
 
-    <nav class="hide-on-small">
-      <ul>
-        <li style="float: left">
-          <a href="index.html"><i class="fa fa-fw fa-home"></i>GGG</a>
-        </li>
-        <li><a href="songs.html">Songs</a></li>
-        <li><a href="guides.html">Guides</a></li>
-        <li><a href="chords.html" class="active">Chords</a></li>
-      </ul>
-    </nav>
-
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-        >&times;</a
-      >
-      <a href="index.html"><i class="fa fa-fw fa-home"></i>GGG</a>
-      <a href="chords.html" class="active">Chords</a>
-      <a href="guides.html">Guides</a> <a href="songs.html">Songs</a>
-    </div>
-    <!-- END OF NAVIGATOIN -->
+    <?php include 'navBar.php'; ?>
 
     <!-- Audio Files -->
     <div>
@@ -64,11 +41,11 @@
       <!-- Game Container -->
       <div class="container">
         <!-- Game Config Controls -->
-  
+
         <h1 class="game-header">E Standard</h1>
         <p id="strict-indicator"></p>
         <div class="counter-container"><p id="counter">Off</p></div>
-  
+
         <!-- Game Buttons -->
         <div id="btn-group">
           <button id="pwr-btn" class="control-btn">On/Off</button>

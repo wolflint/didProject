@@ -1,3 +1,33 @@
+<?php
+if (isset($_GET['error'])) {
+    //empty filed error message
+    if ($_GET['error'] == "emptyfields") {
+        echo '<script language="javascript">';
+        echo 'alert("Fill in all fields! Press Okay to continue and press the Contact link to return to the form.")';
+        echo '</script>';
+    }
+    //invalid email error message
+    elseif ($_GET['error'] == "invalidmail") {
+        echo '<script language="javascript">';
+        echo 'alert("Invalid email! Press Okay to continue and press the Contact link to return to the form.")';
+        echo '</script>';
+    }
+    //reCAPTCHA error message
+    elseif ($_GET['error'] == "reCAPTCHAfail") {
+        echo '<script language="javascript">';
+        echo 'alert("You have not validated the reCAPTCHA! Press Okay to continue and press the Contact link to return to the form.")';
+        echo '</script>';
+    }
+}
+// create a success message if message was sent
+elseif (isset($_GET["mailsent"])) {
+    if ($_GET["mailsent"] == "successful") {
+        echo '<script language="javascript">';
+        echo 'alert("message successfully sent")';
+        echo '</script>';
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,26 +42,9 @@
 
 <body>
     <div class="gradient"></div>
-    <!-- NAVIGATION -->
-    <span class="mobile-nav-button hide-on-large" onclick="openNav()">&#9776;</span>
 
-    <nav class="hide-on-small">
-        <ul>
-            <li style="float: left"><a href="index.html"><i class="fa fa-fw fa-home"></i>GGG</a></li>
-            <li><a href="songs.html" class="active">Songs</a></li>
-            <li><a href="guides.html">Guides</a></li>
-            <li><a href="chords.html">Chords</a></li>
-        </ul>
-    </nav>
+    <?php include 'navBar.php'; ?>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html"><i class="fa fa-fw fa-home"></i>GGG</a>
-        <a href="chords.html" class="active">Chords</a>
-        <a href="guides.html">Guides</a>
-        <a href="songs.html">Songs</a>
-    </div>
-    <!-- END OF NAVIGATOIN -->
     <div class="container">
         <h1>Groovy Guitar Guides - Easy to learn songs!</h1>
         <img class="u-full-width" src="https://source.unsplash.com/random/800x400" alt="Man playing acoustic guitar">
@@ -43,6 +56,36 @@
             <li><hr><a href="#song4"><i class="fas fa-music"></i> Song 4 by The Song Artist</a></li>
             <li><hr><a href="#song5"><i class="fas fa-music"></i> Song 5 by The Song Artist</a></li>
         </ul>
+    </div>
+
+    <div class="container">
+      <!-- contact form -->
+        <h2>Request Song</h2>
+        <p id="contact"></p>
+        <form style="color:black" class="u-full-width" action="contactForm.php" method="post">
+          <?php
+          // Check if the user already tried submitting data.
+          // If they have, return that data.
+
+          // checking username.
+          if (!empty($_GET["name"])) {
+              echo '<input type="text" name="name" placeholder="Full Name" value="'.$_GET["name"].'">';
+          } else {
+              echo '<input type="text" name="name" placeholder="Full Name">';
+          }
+
+          // checking e-mail.
+          if (!empty($_GET["mail"])) {
+              echo '<input type="text" name="mail" placeholder="E-mail" value="'.$_GET["mail"].'">';
+          } else {
+              echo '<input type="text" name="mail" placeholder="E-mail">';
+          }
+          ?>
+
+          <input type="text" name="subject" placeholder="Subject">
+          <textarea name="message" rows="8" cols="80" placeholder="Message"></textarea>
+          <button type="submit" name="submit"> Send Mail </button>
+        </form>
     </div>
 
     <div class="container">
@@ -74,7 +117,7 @@
             <!-- SONG VIDEO -->
             <video class="u-full-width" controls src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
                 poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217" width="620">
-    
+
                 Sorry, your browser doesn't support embedded videos,
                 but don't worry, you can <a href="https://archive.org/details/BigBuckBunny_124">download it</a>
                 and watch it with your favorite video player!
