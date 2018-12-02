@@ -19,7 +19,7 @@
         <h1>Groovy Guitar Guides - How To Section</h1>
 
         <div class="row links">
-            <a href="game.html" class="guide-links">
+            <a href="game.php" class="guide-links">
                 <div class="guide-thumb">
                     <img src="https://source.unsplash.com/random/800x300" alt="Learn to tune a guitar." class="u-full-width">
                     <p class="guide-link-text">Learn how to tune a guitar!</p>

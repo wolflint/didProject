@@ -14,8 +14,7 @@
   <div class="gradient"></div>
   <!-- BACKGROUND VIDEO -->
   <video autoplay muted loop id="myVideo">
-    <source src="assets/bgVideo/bgFlip.mp4" type="video/mp4">
-    <source src="assets/bgVideo/bgFlip.webm" type="video/webm">
+    <source src="assets/videos/bgVideo.mp4" type="video/mp4" poster="assets/videos/bgVideo.png">
     Your browser does not support HTML5 video.
   </video>
 
