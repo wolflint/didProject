@@ -6,7 +6,7 @@
     <li style="float: left"><a href="index.php"><i class="fa fa-fw fa-home"></i>GGG</a></li>
     <li><a href="songs.php">Songs</a></li>
     <li><a href="guides.php">Guides</a></li>
-    <li><a href="chords.php" class="active">Chords</a></li>
+    <li><a href="chords.php">Chords</a></li>
   </ul>
 </nav>
 

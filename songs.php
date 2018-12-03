@@ -39,30 +39,28 @@ elseif (isset($_GET["mailsent"])) {
 
   <?php include 'navBar.php'; ?>
 
+  <!-- SONG LIST -->
   <div class="container">
     <h1>Groovy Guitar Guides - Easy to learn songs!</h1>
-    <img class="u-full-width" src="https://source.unsplash.com/random/800x400" alt="Man playing acoustic guitar">
+    <img class="u-full-width" src="assets/songsImage.jpeg" alt="Picture of acoustic guitar">
     <h2 id="song-list">Song List:</h2>
     <ul class="song-list">
       <li>
-        <hr><a href="#song1"><i class="fas fa-music"></i> The Amazing Song 1 by The Song Artist</a></li>
+        <hr><a href="#song1"><i class="fas fa-music"></i> The Cranberries - Zombie</a></li>
       <li>
-        <hr><a href="#song2"><i class="fas fa-music"></i> Song 2 is Fantastic by The Song Artist</a></li>
+        <hr><a href="#song2"><i class="fas fa-music"></i> Leonard Cohen - Hallelujah</a></li>
       <li>
-        <hr><a href="#song3"><i class="fas fa-music"></i> Song 3 by The Song Artist</a></li>
-      <li>
-        <hr><a href="#song4"><i class="fas fa-music"></i> Song 4 by The Song Artist</a></li>
-      <li>
-        <hr><a href="#song5"><i class="fas fa-music"></i> Song 5 by The Song Artist</a></li>
+        <hr><a href="#song3"><i class="fas fa-music"></i> Pink Floyd - Wish You Were Here</a></li>
     </ul>
   </div>
+
+
 
   <div class="container">
     <!-- contact form -->
     <h2>Request a Song</h2>
     <form action="contactForm.php" method="post">
       <?php
-
           // Check if name was already submitted
           if (!empty($_GET["name"])) {
               echo '<input type="text" name="name" placeholder="Full Name" value="'.$_GET["name"].'"><br>';
@@ -77,26 +75,24 @@ elseif (isset($_GET["mailsent"])) {
               echo '<input type="text" name="email" placeholder="E-mail"><br>';
           }
           ?>
-
       <input type="text" name="subject" placeholder="Subject">
       <textarea name="message" rows="8" cols="60" placeholder="Message"></textarea>
       <button class="button-primary right" type="submit" name="submit"> Send Mail </button>
     </form>
   </div>
 
+
+
   <div class="container">
     <!-- SONG NAME -->
-    <h1 id="song1">Song 1</h1>
+    <h1 id="song1">The Cranberries - Zombie</h1>
     <!-- SONG VIDEO -->
-    <video class="u-full-width" controls src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4" poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217" width="620">
-
-      Sorry, your browser doesn't support embedded videos,
-      but don't worry, you can <a href="https://archive.org/details/BigBuckBunny_124">download it</a>
-      and watch it with your favorite video player!
-    </video>
+    <div class="iframe-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/gCVh1UgOvIA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
     <div class="button-grid">
       <!-- SONG SHEET DOWNLOAD -->
-      <a href="assets/songsheets/pinkFloydWishYouWereHere.pdf" download>
+      <a href="assets/songsheets/CranberriesZombie.pdf" download>
         <button class="left button-primary">
           <i class="fas fa-download"></i>
           Songsheet
@@ -106,16 +102,35 @@ elseif (isset($_GET["mailsent"])) {
     </div>
   </div>
 
+
+
   <div class="container">
     <!-- SONG NAME -->
-    <h1 id="song2">Song 2</h1>
-    <!-- SONG VIDEO -->
-    <video class="u-full-width" controls src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4" poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217" width="620">
+    <h1 id="song2">Leonard Cohen - Hallelujah</h1>
+    <div class="iframe-container">
+      <iframe class="u-full-width" width="560" height="315" src="https://www.youtube.com/embed/KJ-mNXwPhrg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="button-grid">
+      <!-- SONG SHEET DOWNLOAD -->
+      <a href="assets/songsheets/LeonardCohenHallelujah.pdf" download>
+        <button class="left button-primary">
+          <i class="fas fa-download"></i>
+          Songsheet
+        </button></a>
+      <!-- SONG LIST LINK -->
+      <a href="#song-list"><button class="right button-primary">Song List <i class="fas fa-level-up-alt"></i></button></a>
+    </div>
+  </div>
 
-      Sorry, your browser doesn't support embedded videos,
-      but don't worry, you can <a href="https://archive.org/details/BigBuckBunny_124">download it</a>
-      and watch it with your favorite video player!
-    </video>
+
+
+  <div class="container">
+    <!-- SONG NAME -->
+    <h1 id="song3">Pink Floyd - Wish You Were Here</h1>
+    <!-- SONG VIDEO -->
+    <div class="iframe-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/atrTmea3DNg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
     <div class="button-grid">
       <!-- SONG SHEET DOWNLOAD -->
       <a href="assets/songsheets/pinkFloydWishYouWereHere.pdf" download>
