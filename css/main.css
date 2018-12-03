@@ -53,6 +53,7 @@ h6 {
 
 html {
     background: url(../assets/bgPattern.png) repeat;
+		/* overflow-x: hidden; */
 }
 
 body {
@@ -182,7 +183,7 @@ input, textarea {
 
     .sidenav a {
         font-size: 18px;
-    }
+    }hidden
 }
 
 .mobile-nav-button {

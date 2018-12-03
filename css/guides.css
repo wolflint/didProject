@@ -1,11 +1,3 @@
-section {
-	width: 100vw;
-	min-height: 100vh;
-	display: grid;
-	align-content: center;
-	justify-content: center;
-}
-
 .guide-thumb {
     border: double white 5px;
     transition: 0.5s;
@@ -38,7 +30,9 @@ a.guide-links {
 .guide-link-text {
     font-size: 3rem;
 }
-
+.single-item div {
+	width: 100%;
+}
 .single-item h2 {
 	text-align: center;
 }
