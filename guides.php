@@ -19,28 +19,28 @@
         <h1>Groovy Guitar Guides - How To Section</h1>
 
         <div class="row links">
-            <a href="game.php" class="guide-links">
+            <a href="guidesTuning.php" class="guide-links">
                 <div class="guide-thumb">
-                    <img src="https://source.unsplash.com/random/800x300" alt="Learn to tune a guitar." class="u-full-width">
-                    <p class="guide-link-text">Learn how to tune a guitar!</p>
+                    <img src="assets/guidesTuning.jpg" alt="Picture of guitar and a guitar tuner application on a phone." class="u-full-width">
+                    <p class="guide-link-text">How to tune your guitar</p>
                 </div>
             </a>
         </div>
 
         <div class="row">
-            <a href="game.html" class="guide-links">
+            <a href="guidesRestring.php" class="guide-links">
                 <div class="guide-thumb">
-                    <img src="https://source.unsplash.com/random/800x300" alt="Learn to tune a guitar." class="u-full-width">
-                    <p class="guide-link-text">Guide 2</p>
+                    <img src="assets/guidesRestring.jpg" alt="Picture of guitar string being cut with some side cutters." class="u-full-width">
+                    <p class="guide-link-text">How to restring your guitar</p>
                 </div>
             </a>
         </div>
 
         <div class="row">
-            <a href="game.html" class="guide-links">
+            <a href="guidesClean.php" class="guide-links">
                 <div class="guide-thumb">
-                    <img src="https://source.unsplash.com/random/800x300" alt="Learn to tune a guitar." class="u-full-width">
-                    <p class="guide-link-text">Guide 3</>
+                    <img src="assets/guidesCleaning.jpg" alt="Picture of a guitar being cleaned" class="u-full-width">
+                    <p class="guide-link-text">How to clean your guitar</>
                 </div>
             </a>
         </div>

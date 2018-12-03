@@ -13,7 +13,7 @@
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="index.php"><i class="fa fa-fw fa-home"></i>GGG</a>
-  <a href="chords.php" class="active">Chords</a>
+  <a href="chords.php">Chords</a>
   <a href="guides.php">Guides</a>
   <a href="songs.php">Songs</a>
 </div>

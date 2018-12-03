@@ -9,23 +9,27 @@
 /* ANIMATIONS */
 @keyframes link-animation {
     0% {
-      color: yellow;
+      color: #FFDA54;
     }
 
     25% {
-      color: blue;
+      color: #929CE8;
     }
 
     50% {
-      color: red;
+      color: #FF4333;
     }
 
     75% {
-      color: yellowgreen;
+      color: #5BE869;
+    }
+
+    90% {
+      color: #FFF;
     }
 
     100% {
-      color: whitesmoke;
+      color: #FFDA54;
     }
   }
 ::selection {
@@ -63,6 +67,9 @@ a:hover:not(.active){
     animation-name: link-animation;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+    text-shadow: 1px 1px 2px black,
+        0 0 1em white,
+        0 0 0.2em whitesmoke;
 }
 
 .gradient {
