@@ -19,7 +19,7 @@
     <div class="container">
       <div class="header-grid">
         <div class="header-item header-item1">
-          <h1>Groovy Guitar Guides Chord Bank</h1>
+          <h1>GROOVY GUITAR GUIDES CHORD BANK</h1>
         </div>
 
         <div class="header-item header-item2">

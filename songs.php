@@ -41,7 +41,7 @@ elseif (isset($_GET["mailsent"])) {
 
   <!-- SONG LIST -->
   <div class="container">
-    <h1>Groovy Guitar Guides - Easy to learn songs!</h1>
+    <h1>GROOVY GUITAR GUIDES - EASY TO LEARN SONGS!</h1>
     <img class="u-full-width" src="assets/songsImage.jpeg" alt="Picture of acoustic guitar">
     <h2 id="song-list">Song List:</h2>
     <ul class="song-list">

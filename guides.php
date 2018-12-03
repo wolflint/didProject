@@ -16,7 +16,7 @@
     <?php include 'navBar.php'; ?>
 
     <div class="container">
-        <h1>Groovy Guitar Guides - How To Section</h1>
+        <h1>GROOVY GUITAR GUIDES - HOW TO SECTION</h1>
 
         <div class="row links">
             <a href="guidesTuning.php" class="guide-links">
