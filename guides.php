@@ -37,10 +37,10 @@
         </div>
 
         <div class="row">
-            <a href="guidesClean.php" class="guide-links">
+            <a href="guidesChordDiagrams.php" class="guide-links">
                 <div class="guide-thumb">
-                    <img src="assets/guidesCleaning.jpg" alt="Picture of a guitar being cleaned" class="u-full-width">
-                    <p class="guide-link-text">How to clean your guitar</>
+                    <img src="assets/guidesChordDiagrams.jpg" alt="Picture of a guitar being cleaned" class="u-full-width">
+                    <p class="guide-link-text">How to read the chord diagrams</>
                 </div>
             </a>
         </div>
