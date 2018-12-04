@@ -1,0 +1,238 @@
+/* IMPORT CSS */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Black+And+White+Picture');
+@import url('https://fonts.googleapis.com/css?family=Monoton|Rock+Salt');
+@import url('../css/normalize.css');
+@import url('../css/skeleton.css');
+@import url('../css/animate.css');
+
+/* ANIMATIONS */
+@keyframes link-animation {
+    0% {
+      color: #FFDA54;
+    }
+
+    25% {
+      color: #929CE8;
+    }
+
+    50% {
+      color: #FF4333;
+    }
+
+    75% {
+      color: #5BE869;
+    }
+
+    90% {
+      color: #FFF;
+    }
+
+    100% {
+      color: #FFDA54;
+    }
+  }
+::selection {
+    background: purple;
+    color: white;
+}
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-shadow: 1px 1px 2px magenta,
+        0 0 1em blue,
+        0 0 0.2em blue;
+}
+
+html {
+    background: url(../assets/bgPattern.png) repeat;
+}
+
+body {
+    font-family: 'Black And White Picture', sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+    font-size: 17px;
+    color: #ede5db;
+}
+
+a, p {
+	font-size: 2rem;
+}
+
+a {
+	color: violet;
+	transition: 0.2s;
+}
+
+a:hover:not(.active){
+    animation-name: link-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    text-shadow: 1px 1px 2px black,
+        0 0 1em white,
+        0 0 0.2em whitesmoke;
+}
+
+.gradient {
+    position: fixed;
+    z-index: -1;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 0.75) 0%, rgba(253, 29, 29, 0.5) 50%, rgba(252, 176, 69, 0.75) 100%);
+    height: 100vh;
+    width: 100vw;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url('../assets/navPattern.png');
+    background-repeat: repeat-x;
+    opacity: 0.8;
+    visibility: visible;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    margin: 0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+nav li {
+    margin: 0;
+    float: right;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+input, textarea {
+  color: black;
+}
+
+.active {
+    background-color: rgba(147, 46, 214, 0.582);
+}
+.active:hover {
+    color: gold;
+}
+
+.container {
+    padding: 20px 25px 20px 25px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 25px;
+    margin-bottom: 50px;
+}
+
+/* SIDE NAV ON MOBILE */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }hidden
+}
+
+.mobile-nav-button {
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    z-index: 1;
+    font-size: 3rem;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 100%;
+    opacity: 0;
+    transition: 0.4s;
+    visibility: hidden;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+@media screen and (max-width: 750px) {
+    .hide-on-small {
+        display: none;
+    }
+    .container {
+        margin-bottom: 0;
+    }
+    .mobile-nav-button {
+      opacity: 0.8;
+      visibility: visible;
+    }
+
+    nav ul {
+      opacity: 0;
+      visibility: hidden;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .hide-on-large {
+        display: none;
+    }
+}
+
+/* END OF SIDE NAV ON MOBILE */
