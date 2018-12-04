@@ -9,27 +9,32 @@
 /* ANIMATIONS */
 @keyframes link-animation {
     0% {
-      color: yellow;
+      color: #FFDA54;
     }
-  
+
     25% {
-      color: blue;
+      color: #929CE8;
     }
-  
+
     50% {
-      color: red;
+      color: #FF4333;
     }
-  
+
     75% {
-      color: yellowgreen;
+      color: #5BE869;
     }
-  
+
+    90% {
+      color: #FFF;
+    }
+
     100% {
-      color: whitesmoke;
+      color: #FFDA54;
     }
   }
 ::selection {
     background: purple;
+    color: white;
 }
 * {
     box-sizing: border-box;
@@ -47,7 +52,7 @@ h6 {
 }
 
 html {
-    background: url(../assets/patter3.png) repeat;
+    background: url(../assets/bgPattern.png) repeat;
 }
 
 body {
@@ -58,10 +63,22 @@ body {
     color: #ede5db;
 }
 
+a, p {
+	font-size: 2rem;
+}
+
+a {
+	color: violet;
+	transition: 0.2s;
+}
+
 a:hover:not(.active){
     animation-name: link-animation;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+    text-shadow: 1px 1px 2px black,
+        0 0 1em white,
+        0 0 0.2em whitesmoke;
 }
 
 .gradient {
@@ -72,25 +89,24 @@ a:hover:not(.active){
     height: 100vh;
     width: 100vw;
 }
-p {
-    font-size: 28px;
-}
-
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    /* background-color: rgba(0, 0, 0, 0.8); */
     background-image: url('../assets/navPattern.png');
     background-repeat: repeat-x;
     opacity: 0.8;
+    visibility: visible;
     position: fixed;
     bottom: 0;
     width: 100%;
     z-index: 1;
     margin: 0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
 }
 
 nav li {
@@ -108,6 +124,10 @@ nav li a {
 
 nav li a:hover:not(.active) {
     background-color: #111;
+}
+
+input, textarea {
+  color: black;
 }
 
 .active {
@@ -165,19 +185,22 @@ nav li a:hover:not(.active) {
 
     .sidenav a {
         font-size: 18px;
-    }
+    }hidden
 }
 
 .mobile-nav-button {
     cursor: pointer;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     padding: 10px;
     z-index: 1;
     font-size: 3rem;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 100%;
+    opacity: 0;
+    transition: 0.4s;
+    visibility: hidden;
 }
 
 .left {
@@ -194,6 +217,15 @@ nav li a:hover:not(.active) {
     }
     .container {
         margin-bottom: 0;
+    }
+    .mobile-nav-button {
+      opacity: 0.8;
+      visibility: visible;
+    }
+
+    nav ul {
+      opacity: 0;
+      visibility: hidden;
     }
 }
 

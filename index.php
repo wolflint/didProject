@@ -19,9 +19,6 @@
   </video>
 
   <!-- LOGO -->
-  <a href="index.php">
-    <img src="./assets/logo.png" alt="Groovy Guitars Logo" class="logo">
-  </a>
   <main>
     <div class="welcome">
       <h1>GROOVY GUITAR GUIDES</h1>

@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             }
             this.classList.add('btn--active'); //Makes button pushed
             onoff = true; // Allows user to click on buttons
-            gamePlay(); //Start game play 
+            gamePlay(); //Start game play
         }
         //Turn off game
         else {
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 }
             }
         }
-        if (count === 20) { // End of game play 
+        if (count === 20) { // End of game play
             //Execute when the user reaches the end of the pattern.
             alert("You've Reached the end! Congrats you beat the game!");
             gameOver();
@@ -149,11 +149,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
         userTurn = false;
         userArr = [];
         if (strict) {
-            simonArr.push(Math.floor(Math.random() * 6) + 0); //Generates number between 0 - 3
+            simonArr.push(Math.floor(Math.random() * 6) + 0); //Generates number between 0 - 5
             playPattern(simonArr);
             userTurn = true;
         } else {
-            simonArr.push(Math.floor(Math.random() * 6) + 0); //Generates number between 0 - 3	
+            simonArr.push(Math.floor(Math.random() * 6) + 0); //Generates number between 0 - 5
             playPattern(simonArr);
             userTurn = true;
         }

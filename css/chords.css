@@ -14,9 +14,6 @@
     justify-items: center;
     align-items: center;
 }
-/* .header-item {
-    width: 100%;
-} */
 
 .header-item1 {
     grid-column: 1 / -1;

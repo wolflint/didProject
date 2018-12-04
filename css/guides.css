@@ -30,3 +30,9 @@ a.guide-links {
 .guide-link-text {
     font-size: 3rem;
 }
+.single-item div {
+	width: 100%;
+}
+.single-item h2 {
+	text-align: center;
+}
