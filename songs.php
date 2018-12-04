@@ -1,19 +1,19 @@
 <?php
 if (isset($_GET['error'])) {
-    //empty filed error message
+    //empty fields error message alert
     if ($_GET['error'] == "emptyfields") {
         echo '<script language="javascript">';
         echo 'alert("Incomplete request form. Please fill in all of the fields.")';
         echo '</script>';
     }
-    //invalid email error message
+    //invalid email error message alert
     elseif ($_GET['error'] == "invalidmail") {
         echo '<script language="javascript">';
         echo 'alert("Invalid email. Please enter a valid email address.")';
         echo '</script>';
     }
 }
-// create a success message if message was sent
+// success message alert
 elseif (isset($_GET["mailsent"])) {
     if ($_GET["mailsent"] == "successful") {
         echo '<script language="javascript">';
@@ -57,11 +57,11 @@ elseif (isset($_GET["mailsent"])) {
 
 
   <div class="container">
-    <!-- contact form -->
+    <!-- Contact form -->
     <h2>Request a Song</h2>
     <form action="contactForm.php" method="post">
       <?php
-          // Check if name was already submitted
+          // Check if the name was already submitted
           if (!empty($_GET["name"])) {
               echo '<input type="text" name="name" placeholder="Full Name" value="'.$_GET["name"].'"><br>';
           } else {

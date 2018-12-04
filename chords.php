@@ -63,7 +63,6 @@
           </div>
         </div>
         <audio class="u-full-width" controls>
-          <!-- <source src="horse.ogg" type="audio/ogg"> -->
           <source src="assets/chords/audio/b_maj.mp3" type="audio/mpeg" />
         </audio>
         <h5 class="chord-name">B Major</h5>
@@ -77,7 +76,6 @@
           </div>
         </div>
         <audio class="u-full-width" controls>
-          <!-- <source src="horse.ogg" type="audio/ogg"> -->
           <source src="assets/chords/audio/c_maj.mp3" type="audio/mpeg" />
         </audio>
         <h5 class="chord-name">C Major</h5>
@@ -91,7 +89,6 @@
           </div>
         </div>
         <audio class="u-full-width" controls>
-          <!-- <source src="horse.ogg" type="audio/ogg"> -->
           <source src="assets/chords/audio/d_maj.mp3" type="audio/mpeg" />
         </audio>
         <h5 class="chord-name">D Major</h5>
@@ -105,7 +102,6 @@
           </div>
         </div>
         <audio class="u-full-width" controls>
-          <!-- <source src="horse.ogg" type="audio/ogg"> -->
           <source src="assets/chords/audio/e_maj.mp3" type="audio/mpeg" />
         </audio>
         <h5 class="chord-name">E Major</h5>
@@ -119,7 +115,6 @@
           </div>
         </div>
         <audio class="u-full-width" controls>
-          <!-- <source src="horse.ogg" type="audio/ogg"> -->
           <source src="assets/chords/audio/f_maj.mp3" type="audio/mpeg" />
         </audio>
         <h5 class="chord-name">F Major</h5>
@@ -133,7 +128,6 @@
           </div>
         </div>
         <audio class="u-full-width" controls>
-          <!-- <source src="horse.ogg" type="audio/ogg"> -->
           <source src="assets/chords/audio/g_maj.mp3" type="audio/mpeg" />
         </audio>
         <h5 class="chord-name">G Major</h5>
@@ -167,7 +161,6 @@
           </div>
         </div>
         <audio class="u-full-width" controls>
-          <!-- <source src="horse.ogg" type="audio/ogg"> -->
           <source src="assets/chords/audio/b_min.mp3" type="audio/mpeg" />
         </audio>
         <h5 class="chord-name">B Minor</h5>
@@ -181,7 +174,6 @@
           </div>
         </div>
         <audio class="u-full-width" controls>
-          <!-- <source src="horse.ogg" type="audio/ogg"> -->
           <source src="assets/chords/audio/c_min.mp3" type="audio/mpeg" />
         </audio>
         <h5 class="chord-name">C Minor</h5>
@@ -195,7 +187,6 @@
           </div>
         </div>
         <audio class="u-full-width" controls>
-          <!-- <source src="horse.ogg" type="audio/ogg"> -->
           <source src="assets/chords/audio/d_min.mp3" type="audio/mpeg" />
         </audio>
         <h5 class="chord-name">D Minor</h5>
@@ -209,7 +200,6 @@
           </div>
         </div>
         <audio class="u-full-width" controls>
-          <!-- <source src="horse.ogg" type="audio/ogg"> -->
           <source src="assets/chords/audio/e_min.mp3" type="audio/mpeg" />
         </audio>
         <h5 class="chord-name">E Minor</h5>
@@ -223,7 +213,6 @@
           </div>
         </div>
         <audio class="u-full-width" controls>
-          <!-- <source src="horse.ogg" type="audio/ogg"> -->
           <source src="assets/chords/audio/f_min.mp3" type="audio/mpeg" />
         </audio>
         <h5 class="chord-name">F Minor</h5>
@@ -237,7 +226,6 @@
           </div>
         </div>
         <audio class="u-full-width" controls>
-          <!-- <source src="horse.ogg" type="audio/ogg"> -->
           <source src="assets/chords/audio/g_min.mp3" type="audio/mpeg" />
         </audio>
         <h5 class="chord-name">G Minor</h5>

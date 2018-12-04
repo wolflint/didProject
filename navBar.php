@@ -1,7 +1,7 @@
 <!-- NAVIGATION -->
-<span class="mobile-nav-button hide-on-large" onclick="openNav()">&#9776;</span>
+<span class="mobile-nav-button" onclick="openNav()">&#9776;</span>
 
-<nav class="hide-on-small">
+<nav>
   <ul>
     <li style="float: left"><a href="index.php"><i class="fa fa-fw fa-home"></i>GGG</a></li>
     <li><a href="songs.php">Songs</a></li>

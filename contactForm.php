@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
   function send_mail()
   {
-      //grabbing data from form
+      //set variables from POST
       $name = test_input($_POST['name']);
       $subject = test_input($_POST['subject']);
       $mailFrom = test_input($_POST['email']);
@@ -19,18 +19,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
       //Error handlers
 
-      //checking for empty inputs
+      //check for empty inputs
       if (empty($name) || empty($subject) || empty($mailFrom) || empty($message)) {
           header("Location: songs.php?error=emptyfields&name=".$name."&email=".$mailFrom);
           exit();
       }
 
-      //checking for an invalid e-mail.
+      //check for an invalid e-mail.
       elseif (!filter_var($mailFrom, FILTER_VALIDATE_EMAIL)) {
           header("Location: songs.php?error=invalidmail&name=".$name."&email=".$mailFrom);
           exit();
       } else {
-          //setting data to variables
+          //setting email data to variables
           $mailTo = "songrequests@wolflint.one";
           $headers = "From: ".$mailFrom;
           $txt = "You have received an e-mail from ".$name.".\n\n".$message;
@@ -44,6 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       }
   }
 
+// Message validation for code
     function test_input($data)
     {
         $data = trim($data);

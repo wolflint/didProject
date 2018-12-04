@@ -56,7 +56,7 @@
 						<img src="assets/restringing/step5.jpg" alt="A picture of a guitar machine head being wound using a string winder." class="u-full-width">
 						<h2>Step 5</h2>
 						<p>Start winding the string, this can be done by hand or with the string winder, make sure that you wind the sting on the inner side of the headstock. Also, while you’re winding it put pressure on the string to pull it down so that it doesn’t wind over itself. Do not overwind the string, this can cause unnecessary tension which can damage your guitar or snap the string.</p>
-						<p>Once you do that, tune the string (<a class="link" href="guidesTuning.php">read the tuning guide</a>) and repeat for the next strings. If you’re replacing all of the strings you might want to remove all of them at once and then clean the guitar (<a class="link" href="guidesCleaning.php">read the cleaning guide</a>), as it is easier to do so without the strings.</p>
+						<p>Once you do that, tune the string (<a class="link" href="guidesTuning.php">read the tuning guide</a>) and repeat for the next strings. If you’re replacing all of the strings you might want to remove all of them at once and then clean the guitar, as it is easier to do so without the strings.</p>
 						<p>The new strings will take a while to settle in therefore you should retune them every 5 minutes (or as soon as you notice that they sound off) until they settle in.</p>
 					</div>
 
